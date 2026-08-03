@@ -1,55 +1,205 @@
-# Security Policy
+# AxiomForge Security Policy
 
-## Overview
+## Purpose
 
-Security is a core priority of AxiomForge.
+This document describes how security vulnerabilities in AxiomForge should be reported and handled.
 
-Because AxiomForge is a cybersecurity learning platform, maintaining secure software practices is essential for protecting users, contributors, and the integrity of learning environments.
+AxiomForge takes security seriously because the platform is designed around technical learning, including cybersecurity and secure software development.
 
-## Reporting a Vulnerability
+---
 
-If you discover a security vulnerability, please report it responsibly.
+# Reporting Security Issues
+
+If you discover a potential security vulnerability, please report it privately.
+
+Do not publicly disclose the vulnerability before it has been reviewed and addressed.
+
+Private disclosure allows the project to:
+
+* Investigate the issue.
+* Protect users.
+* Develop a fix.
+* Release updates responsibly.
+
+---
+
+# What Should Be Reported
+
+Examples of security issues include:
+
+## Authentication Problems
+
+Examples:
+
+* Account takeover vulnerabilities.
+* Session management issues.
+* Password security problems.
+
+---
+
+## Authorization Problems
+
+Examples:
+
+* Accessing resources without permission.
+* Privilege escalation.
+* Role bypasses.
+
+---
+
+## Data Exposure
+
+Examples:
+
+* Sensitive information leaks.
+* Unauthorized access to user data.
+* Incorrect API responses exposing private information.
+
+---
+
+## Application Vulnerabilities
+
+Examples:
+
+* Injection vulnerabilities.
+* Cross-site scripting.
+* Unsafe file handling.
+* Security configuration issues.
+
+---
+
+## Infrastructure Issues
+
+Examples:
+
+* Unsafe deployment configuration.
+* Exposed services.
+* Insecure defaults.
+
+---
+
+# What Is Not a Security Vulnerability
+
+The following are generally not security issues:
+
+* Normal bugs without security impact.
+* Feature requests.
+* Performance improvements.
+* Documentation errors.
+
+These should be reported through normal issue channels.
+
+---
+
+# Security Report Information
+
+A useful report should include:
+
+## Description
+
+Explain:
+
+* What the vulnerability is.
+* Why it is a security concern.
+
+---
+
+## Reproduction Steps
 
 Include:
 
-* A description of the vulnerability
-* Steps to reproduce the issue
-* Potential impact
-* Any relevant evidence or logs
+* Required conditions.
+* Steps to reproduce.
+* Example requests or demonstrations.
 
-Please avoid publicly disclosing vulnerabilities before they have been investigated and addressed.
+Only include proof necessary to demonstrate the issue.
 
-## Responsible Disclosure
+---
 
-Security researchers and contributors should:
+## Impact
 
-* Avoid accessing data that does not belong to them
-* Avoid disrupting services
-* Avoid testing against production systems without authorization
-* Provide enough information for the issue to be reproduced
+Explain:
 
-## Security Review Process
+* What could happen if exploited.
+* Which users or systems are affected.
 
-Reported vulnerabilities will be:
+---
 
-1. Acknowledged
-2. Investigated
-3. Prioritized based on severity
-4. Fixed when possible
-5. Documented appropriately
+## Suggested Fix
 
-## Scope
+If possible, include ideas for mitigation.
 
-Security concerns may include:
+---
 
-* Authentication issues
-* Authorization problems
-* Data exposure
-* Injection vulnerabilities
-* Lab environment security issues
-* Infrastructure vulnerabilities
+# Security Review Process
 
-## Supported Versions
+After receiving a report:
 
-Security updates will generally focus on actively maintained versions of AxiomForge.
+1. The issue will be reviewed.
+2. The vulnerability will be investigated.
+3. The impact will be evaluated.
+4. A fix will be developed.
+5. The change will be tested.
+6. A release may be published.
+
+---
+
+# Responsible Disclosure
+
+Security researchers and contributors are expected to:
+
+* Avoid accessing unnecessary data.
+* Avoid disrupting services.
+* Avoid testing against systems they do not own.
+* Keep vulnerability details private until resolution.
+
+---
+
+# Development Security Practices
+
+AxiomForge follows security practices including:
+
+* Input validation.
+* Session security.
+* Authorization checks.
+* Secure dependency management.
+* Code review.
+* Automated security checks.
+
+More details:
+
+```text id="r8q3y6"
+docs/reference/security-model.md
+```
+
+---
+
+# Supported Versions
+
+Security fixes are prioritized for:
+
+```text id="n6t4x2"
+Current stable release
+```
+
+Older versions may not receive security updates.
+
+---
+
+# Security Improvements
+
+Future improvements may include:
+
+* Automated vulnerability scanning.
+* Security testing pipelines.
+* Audit logging.
+* Advanced monitoring.
+
+---
+
+# Thank You
+
+Responsible security research helps make AxiomForge safer.
+
+Thank you to everyone who reports issues responsibly and helps improve the project.
 

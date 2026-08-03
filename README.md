@@ -1,80 +1,340 @@
 # AxiomForge
 
-AxiomForge is a practical technology education ecosystem designed to help learners understand, build, and apply skills across cybersecurity, programming, and IT.
+AxiomForge is an open-source technical learning platform designed to help people develop practical skills in areas such as:
 
-## Vision
+* Cybersecurity.
+* Programming.
+* IT.
+* Systems administration.
+* Software engineering.
 
-AxiomForge aims to create a structured learning environment where people can develop real technical skills through:
+The goal is to create a structured learning ecosystem that combines educational content with practical experience.
 
-* Guided learning paths
-* Structured courses and lessons
-* Hands-on labs and challenges
-* Assessments and progress tracking
-* Practical application of knowledge
+---
 
-The goal is not only to teach concepts, but to help learners understand how technology works and apply that knowledge in realistic scenarios.
+# Project Status
 
-## Mission
+Current phase:
 
-Make high-quality technology education more accessible by providing a platform focused on:
+```text
+Architecture and Foundation Development
+```
 
-* Understanding fundamentals
-* Building strong foundations
-* Practicing through hands-on experiences
-* Developing real-world technical skills
+AxiomForge is currently being designed and built from the ground up.
 
-## Current Status
+The project focuses on:
 
-AxiomForge is currently in the planning and architecture phase.
+* Professional software engineering practices.
+* Secure development.
+* Maintainable architecture.
+* Open-source collaboration.
 
-The initial focus areas are:
+---
 
-* Cybersecurity
-* Programming
-* IT fundamentals
+# Vision
 
-Future areas may include:
+AxiomForge aims to become a platform where learners can:
 
-* Networking
-* Linux and systems
-* Cloud technologies
-* Homelabbing
-* DevOps
+* Follow structured learning paths.
+* Complete courses.
+* Practice through hands-on labs.
+* Track their progress.
+* Contribute educational content.
+* Improve their technical skills.
 
-## Architecture
+---
 
-AxiomForge is designed as a modular monolith architecture.
+# Core Principles
 
-The platform will be organized around independent modules such as:
+AxiomForge follows these principles:
 
-* Authentication
-* Users
-* Learning
-* Labs
-* Assessments
-* Progress
-* Content Management
+## Learn Through Practice
 
-## Open Source
+Technical skills require application.
 
-AxiomForge is an open-source project developed with community collaboration.
+The platform focuses on:
 
-Contributions are welcome through pull requests, but all changes are reviewed by maintainers to ensure:
+* Practical exercises.
+* Labs.
+* Real-world scenarios.
 
-* Code quality
-* Security
-* Maintainability
-* Alignment with project goals
+---
 
-## Learning Philosophy
+## Security First
 
-AxiomForge follows the principle:
+Security is considered throughout development.
 
-Learn → Understand → Practice → Build → Improve
+Important areas:
 
-The platform focuses on developing skills through active learning rather than passive consumption.
+* Authentication.
+* Authorization.
+* Input validation.
+* Secure software design.
 
-## License
+---
 
-AxiomForge is licensed under the Apache License 2.0.
+## Quality Over Speed
+
+The project prioritizes:
+
+* Maintainable code.
+* Documentation.
+* Testing.
+* Thoughtful architecture.
+
+---
+
+## Open Source With Controlled Contributions
+
+AxiomForge is open source.
+
+Contributions are welcome, but changes follow a review process to maintain quality.
+
+The contribution workflow includes:
+
+* Feature branches.
+* Pull requests.
+* Code review.
+* Automated checks.
+
+---
+
+# Architecture
+
+AxiomForge uses a modular monolith architecture.
+
+High-level structure:
+
+```text
+Frontend
+    |
+    |
+Backend API
+    |
+    |
+Application Modules
+    |
+    |
+PostgreSQL + Redis
+```
+
+Main backend modules:
+
+```text
+Auth
+
+Users
+
+Learning
+
+Labs
+
+Assessments
+
+Progress
+
+Reviews
+
+Admin
+```
+
+---
+
+# Technology Stack
+
+## Frontend
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+
+## Backend
+
+* NestJS
+* TypeScript
+
+## Database
+
+* PostgreSQL
+* TypeORM
+
+## Infrastructure
+
+* Docker Compose
+
+## Authentication
+
+* Session-based authentication.
+* Redis session storage.
+
+## API
+
+* REST API.
+* OpenAPI / Swagger documentation.
+
+More details:
+
+```text
+docs/architecture/tech-stack.md
+```
+
+---
+
+# Documentation
+
+Project documentation is organized into:
+
+```text
+docs/
+
+├── architecture/
+
+├── decisions/
+
+├── development/
+
+├── api/
+
+├── releases/
+
+└── reference/
+```
+
+Important documents:
+
+Architecture:
+
+```text
+docs/architecture/
+```
+
+Architecture decisions:
+
+```text
+docs/decisions/
+```
+
+Development guide:
+
+```text
+docs/development/getting-started.md
+```
+
+Security model:
+
+```text
+docs/reference/security-model.md
+```
+
+---
+
+# Development
+
+Requirements:
+
+* Node.js
+* Docker
+* Docker Compose
+* Git
+
+Setup instructions:
+
+```text
+docs/development/getting-started.md
+```
+
+---
+
+# Contributing
+
+Contributions are welcome.
+
+Before contributing:
+
+1. Read the contribution guidelines.
+2. Understand the project architecture.
+3. Review relevant ADRs.
+4. Create a feature branch.
+5. Submit a pull request.
+
+See:
+
+```text
+CONTRIBUTING.md
+```
+
+---
+
+# Security
+
+Security issues should be reported privately.
+
+See:
+
+```text
+SECURITY.md
+```
+
+---
+
+# License
+
+AxiomForge is licensed under:
+
+```text
+LICENSE
+```
+
+---
+
+# Roadmap
+
+Current roadmap:
+
+```text
+V0
+
+Architecture + Documentation
+
+↓
+
+V1
+
+Core Learning Platform
+
+↓
+
+V2
+
+Community + Platform Improvements
+
+↓
+
+V3
+
+Advanced Learning Ecosystem
+```
+
+Full roadmap:
+
+```text
+docs/architecture/roadmap.md
+```
+
+---
+
+# Contributing to the Future
+
+AxiomForge is built with the goal of becoming a long-term open-source project.
+
+The project values contributors who care about:
+
+* Learning.
+* Quality.
+* Security.
+* Collaboration.
+* Building useful software.
+
+Welcome to AxiomForge.
 
