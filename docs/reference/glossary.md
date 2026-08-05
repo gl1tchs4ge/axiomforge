@@ -6,10 +6,10 @@ This document defines common terms used throughout the AxiomForge project.
 
 The goal is to keep terminology consistent between:
 
-* Developers.
-* Contributors.
-* Documentation.
-* Future team members.
+- Developers.
+- Contributors.
+- Documentation.
+- Future team members.
 
 ---
 
@@ -31,9 +31,9 @@ Users may have different roles depending on their permissions.
 
 Examples:
 
-* Student.
-* Reviewer.
-* Administrator.
+- Student.
+- Reviewer.
+- Administrator.
 
 ---
 
@@ -117,11 +117,11 @@ A single educational unit inside a course.
 
 A lesson may contain:
 
-* Explanations.
-* Examples.
-* Exercises.
-* Labs.
-* Assessments.
+- Explanations.
+- Examples.
+- Exercises.
+- Labs.
+- Assessments.
 
 ---
 
@@ -131,9 +131,9 @@ A practical environment where users apply knowledge.
 
 Examples:
 
-* Security challenges.
-* Programming exercises.
-* System administration tasks.
+- Security challenges.
+- Programming exercises.
+- System administration tasks.
 
 ---
 
@@ -143,9 +143,9 @@ A method of evaluating user understanding.
 
 Examples:
 
-* Quizzes.
-* Knowledge checks.
-* Practical evaluations.
+- Quizzes.
+- Knowledge checks.
+- Practical evaluations.
 
 ---
 
@@ -155,9 +155,9 @@ The recorded advancement of a user through learning resources.
 
 Examples:
 
-* Completed lessons.
-* Finished labs.
-* Assessment results.
+- Completed lessons.
+- Finished labs.
+- Assessment results.
 
 ---
 
@@ -169,10 +169,10 @@ Educational material available on the platform.
 
 Examples:
 
-* Lessons.
-* Labs.
-* Documentation.
-* Assessments.
+- Lessons.
+- Labs.
+- Documentation.
+- Assessments.
 
 ---
 
@@ -222,8 +222,8 @@ Published
 
 An application architecture where:
 
-* The system is deployed as one application.
-* Internal components are separated into independent modules.
+- The system is deployed as one application.
+- Internal components are separated into independent modules.
 
 AxiomForge uses this approach to balance simplicity and future scalability.
 
@@ -293,9 +293,9 @@ A request to merge changes into the main codebase.
 
 PRs allow:
 
-* Review.
-* Discussion.
-* Quality checks.
+- Review.
+- Discussion.
+- Quality checks.
 
 ---
 
@@ -305,10 +305,10 @@ A person who helps improve AxiomForge.
 
 Contributors may submit:
 
-* Code.
-* Documentation.
-* Bug reports.
-* Improvements.
+- Code.
+- Documentation.
+- Bug reports.
+- Improvements.
 
 ---
 
@@ -368,9 +368,9 @@ Checking external data before processing it.
 
 Used to prevent:
 
-* Invalid data.
-* Unexpected behavior.
-* Security issues.
+- Invalid data.
+- Unexpected behavior.
+- Security issues.
 
 ---
 
@@ -395,4 +395,3 @@ A weakness that could allow unintended behavior or compromise.
 This glossary provides a shared vocabulary for AxiomForge.
 
 As the project grows, new terms should be added when they become important enough to avoid confusion.
-

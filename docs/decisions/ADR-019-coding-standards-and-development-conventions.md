@@ -28,12 +28,12 @@ These standards apply to all contributors and all future development.
 
 ## TypeScript
 
-* Classes: `PascalCase`
-* Interfaces: `PascalCase`
-* Enums: `PascalCase`
-* Variables: `camelCase`
-* Functions: `camelCase`
-* Constants: `UPPER_SNAKE_CASE` when appropriate
+- Classes: `PascalCase`
+- Interfaces: `PascalCase`
+- Enums: `PascalCase`
+- Variables: `camelCase`
+- Functions: `camelCase`
+- Constants: `UPPER_SNAKE_CASE` when appropriate
 
 Examples:
 
@@ -121,8 +121,8 @@ Future versions may migrate to a structured logging solution such as Pino withou
 
 The project will use:
 
-* ESLint
-* Prettier
+- ESLint
+- Prettier
 
 Formatting should be automated whenever possible.
 
@@ -168,12 +168,12 @@ Documentation is considered part of the project and must evolve alongside the co
 
 When appropriate, contributors should update:
 
-* ADRs
-* README
-* OpenAPI documentation
-* `.env.example`
-* Release documentation
-* Architecture documentation
+- ADRs
+- README
+- OpenAPI documentation
+- `.env.example`
+- Release documentation
+- Architecture documentation
 
 Documentation should explain both **what changed** and **why it changed**.
 
@@ -185,12 +185,12 @@ Major releases should include version-specific documentation.
 
 Release documentation should describe:
 
-* Features introduced
-* Technology stack
-* Architectural changes
-* Breaking changes
-* Migration notes
-* Known limitations
+- Features introduced
+- Technology stack
+- Architectural changes
+- Breaking changes
+- Migration notes
+- Known limitations
 
 The project should preserve historical documentation to help future contributors understand the evolution of AxiomForge.
 
@@ -208,15 +208,15 @@ Code should be written clearly enough that unnecessary comments are avoided.
 
 A change is considered complete when applicable:
 
-* Implementation is finished.
-* Tests have been added or updated.
-* Linting passes.
-* Type checking passes.
-* Build verification succeeds.
-* Documentation has been updated.
-* OpenAPI documentation has been updated (if applicable).
-* New configuration has been documented.
-* Code review has been completed.
+- Implementation is finished.
+- Tests have been added or updated.
+- Linting passes.
+- Type checking passes.
+- Build verification succeeds.
+- Documentation has been updated.
+- OpenAPI documentation has been updated (if applicable).
+- New configuration has been documented.
+- Code review has been completed.
 
 ---
 
@@ -226,13 +226,13 @@ A change is considered complete when applicable:
 
 Advantages:
 
-* Fewer initial rules.
+- Fewer initial rules.
 
 Disadvantages:
 
-* Inconsistent code.
-* Harder maintenance.
-* Lower contributor experience.
+- Inconsistent code.
+- Harder maintenance.
+- Lower contributor experience.
 
 Rejected.
 
@@ -242,10 +242,10 @@ Rejected.
 
 Advantages:
 
-* Consistent codebase.
-* Easier onboarding.
-* Professional development workflow.
-* Better long-term maintainability.
+- Consistent codebase.
+- Easier onboarding.
+- Professional development workflow.
+- Better long-term maintainability.
 
 Chosen.
 
@@ -255,16 +255,16 @@ Chosen.
 
 ## Positive Consequences
 
-* Consistent development practices.
-* Easier code reviews.
-* Higher code quality.
-* Improved contributor experience.
-* Better long-term maintainability.
+- Consistent development practices.
+- Easier code reviews.
+- Higher code quality.
+- Improved contributor experience.
+- Better long-term maintainability.
 
 ## Negative Consequences
 
-* Contributors must learn project conventions.
-* Some additional documentation effort is required.
+- Contributors must learn project conventions.
+- Some additional documentation effort is required.
 
 ---
 
@@ -275,4 +275,3 @@ This decision supports all previous architectural decisions by defining how they
 ## Summary
 
 AxiomForge will maintain a consistent set of coding, documentation, Git, and development conventions to ensure long-term maintainability, professional collaboration, and a predictable contributor experience.
-

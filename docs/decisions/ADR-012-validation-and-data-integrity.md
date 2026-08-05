@@ -12,23 +12,23 @@ Accepted
 
 AxiomForge will receive data from multiple sources:
 
-* User registration
-* Authentication requests
-* Course creation
-* Lesson content
-* Labs
-* Progress tracking
-* Community contributions
+- User registration
+- Authentication requests
+- Course creation
+- Lesson content
+- Labs
+- Progress tracking
+- Community contributions
 
 All external input must be considered untrusted.
 
 The platform requires a validation strategy that provides:
 
-* Secure input handling
-* Consistent API behavior
-* Data integrity
-* Maintainable backend architecture
-* Protection against malicious input
+- Secure input handling
+- Consistent API behavior
+- Data integrity
+- Maintainable backend architecture
+- Protection against malicious input
 
 Since AxiomForge allows contributors to create educational content, the system must balance flexibility with security.
 
@@ -68,9 +68,9 @@ Frontend validation will primarily exist for user experience.
 
 Responsibilities:
 
-* Provide immediate feedback
-* Reduce unnecessary API requests
-* Improve usability
+- Provide immediate feedback
+- Reduce unnecessary API requests
+- Improve usability
 
 Frontend validation will not be considered a security mechanism.
 
@@ -94,11 +94,11 @@ DTOs will define expected request structures.
 
 Examples:
 
-* Required fields
-* Data types
-* String length limits
-* Email formats
-* Allowed values
+- Required fields
+- Data types
+- String length limits
+- Email formats
+- Allowed values
 
 The backend will reject invalid requests before they reach application logic.
 
@@ -110,9 +110,9 @@ Application-level validation will handle rules that depend on system state.
 
 Examples:
 
-* A user cannot create a course without instructor permissions.
-* A lesson cannot be published before approval.
-* A user cannot submit progress for a nonexistent lab.
+- A user cannot create a course without instructor permissions.
+- A lesson cannot be published before approval.
+- A user cannot submit progress for a nonexistent lab.
 
 Business validation will remain separate from DTO validation.
 
@@ -128,10 +128,10 @@ The database will enforce important data constraints.
 
 Examples:
 
-* Required fields
-* Unique values
-* Foreign key relationships
-* Data consistency rules
+- Required fields
+- Unique values
+- Foreign key relationships
+- Data consistency rules
 
 The database acts as the final protection layer against invalid states.
 
@@ -173,14 +173,14 @@ Dangerous content will be removed before rendering.
 
 Advantages:
 
-* Maximum flexibility
-* Rich content support
+- Maximum flexibility
+- Rich content support
 
 Disadvantages:
 
-* High XSS risk
-* Dangerous HTML execution
-* Difficult security management
+- High XSS risk
+- Dangerous HTML execution
+- Difficult security management
 
 Rejected because contributor content cannot be fully trusted.
 
@@ -190,15 +190,15 @@ Rejected because contributor content cannot be fully trusted.
 
 Advantages:
 
-* Very secure
-* Simple implementation
+- Very secure
+- Simple implementation
 
 Disadvantages:
 
-* Poor educational experience
-* No code blocks
-* No formatting
-* Limited documentation capabilities
+- Poor educational experience
+- No code blocks
+- No formatting
+- Limited documentation capabilities
 
 Rejected because technical education requires richer content.
 
@@ -208,16 +208,16 @@ Rejected because technical education requires richer content.
 
 Advantages:
 
-* Supports technical documentation
-* Supports code examples
-* Easy version control integration
-* Reduces XSS risk
-* Good contributor experience
+- Supports technical documentation
+- Supports code examples
+- Easy version control integration
+- Reduces XSS risk
+- Good contributor experience
 
 Disadvantages:
 
-* Requires sanitization
-* Some formatting limitations
+- Requires sanitization
+- Some formatting limitations
 
 Chosen approach.
 
@@ -227,17 +227,17 @@ Chosen approach.
 
 The system must assume:
 
-* Users can modify requests.
-* Frontend validation can be bypassed.
-* Contributors may accidentally or intentionally submit malicious content.
+- Users can modify requests.
+- Frontend validation can be bypassed.
+- Contributors may accidentally or intentionally submit malicious content.
 
 Security controls include:
 
-* Backend validation
-* Input sanitization
-* Database constraints
-* Authorization checks
-* Output encoding
+- Backend validation
+- Input sanitization
+- Database constraints
+- Authorization checks
+- Output encoding
 
 ---
 
@@ -245,17 +245,17 @@ Security controls include:
 
 ### Positive Consequences
 
-* Stronger security boundaries
-* Consistent API behavior
-* Better data quality
-* Maintainable backend design
-* Safe rich educational content
+- Stronger security boundaries
+- Consistent API behavior
+- Better data quality
+- Maintainable backend design
+- Safe rich educational content
 
 ### Negative Consequences
 
-* Multiple validation layers require additional implementation
-* Markdown sanitization requires maintenance
-* Some advanced formatting may be restricted
+- Multiple validation layers require additional implementation
+- Markdown sanitization requires maintenance
+- Some advanced formatting may be restricted
 
 ---
 
@@ -263,14 +263,13 @@ Security controls include:
 
 This decision builds upon:
 
-* ADR-003: Backend Framework – NestJS
-* ADR-004: Primary Database – PostgreSQL
-* ADR-010: Authorization Model and Content Review Workflow
-* ADR-011: API Design Strategy
+- ADR-003: Backend Framework – NestJS
+- ADR-004: Primary Database – PostgreSQL
+- ADR-010: Authorization Model and Content Review Workflow
+- ADR-011: API Design Strategy
 
 Validation supports the security and maintainability goals established in previous architectural decisions.
 
 ## Summary
 
 AxiomForge will implement layered validation using NestJS DTO validation, business rule validation, database constraints, and sanitized Markdown content. This provides a secure and maintainable foundation while preserving the flexibility required for technical education.
-

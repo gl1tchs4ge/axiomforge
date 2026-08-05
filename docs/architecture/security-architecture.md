@@ -8,11 +8,11 @@ Rather than treating security as a single feature, AxiomForge applies security c
 
 This document complements:
 
-* `docs/reference/security-model.md`
-* `SECURITY.md`
-* ADR-009 (Session-Based Authentication)
-* ADR-010 (Authorization and Content Review)
-* ADR-012 (Validation and Data Integrity)
+- `docs/reference/security-model.md`
+- `SECURITY.md`
+- ADR-009 (Session-Based Authentication)
+- ADR-010 (Authorization and Content Review)
+- ADR-012 (Validation and Data Integrity)
 
 ---
 
@@ -63,10 +63,10 @@ All communication between clients and the application should use HTTPS.
 
 Goals:
 
-* Encrypt traffic.
-* Protect session cookies.
-* Prevent eavesdropping.
-* Reduce man-in-the-middle attacks.
+- Encrypt traffic.
+- Protect session cookies.
+- Prevent eavesdropping.
+- Reduce man-in-the-middle attacks.
 
 ---
 
@@ -76,9 +76,9 @@ The frontend should never be trusted.
 
 Its responsibilities are:
 
-* Collect user input.
-* Perform basic client-side validation.
-* Display server responses.
+- Collect user input.
+- Perform basic client-side validation.
+- Display server responses.
 
 Security decisions must always be enforced by the backend.
 
@@ -90,15 +90,15 @@ Authentication verifies user identity.
 
 Current approach:
 
-* Session-based authentication.
-* Secure HTTP-only cookies.
-* Redis-backed session storage.
+- Session-based authentication.
+- Secure HTTP-only cookies.
+- Redis-backed session storage.
 
 Sessions should:
 
-* Expire appropriately.
-* Be invalidated after password changes.
-* Be removed during logout.
+- Expire appropriately.
+- Be invalidated after password changes.
+- Be removed during logout.
 
 ---
 
@@ -114,8 +114,8 @@ Authorization answers:
 
 AxiomForge uses:
 
-* Role-Based Access Control (RBAC).
-* Permission-based authorization.
+- Role-Based Access Control (RBAC).
+- Permission-based authorization.
 
 Every protected endpoint should verify permissions before executing business logic.
 
@@ -127,10 +127,10 @@ Every request entering the backend must be considered untrusted.
 
 Validation should occur before:
 
-* Database operations.
-* Business logic execution.
-* File processing.
-* External service communication.
+- Database operations.
+- Business logic execution.
+- File processing.
+- External service communication.
 
 Invalid requests should be rejected immediately.
 
@@ -142,10 +142,10 @@ Business services enforce application rules.
 
 Examples:
 
-* Course enrollment requirements.
-* Review approval workflow.
-* Progress completion rules.
-* Assessment evaluation.
+- Course enrollment requirements.
+- Review approval workflow.
+- Progress completion rules.
+- Assessment evaluation.
 
 Business logic should never rely solely on frontend validation.
 
@@ -157,10 +157,10 @@ PostgreSQL is the primary source of truth.
 
 Database security includes:
 
-* Parameterized queries through the ORM.
-* Explicit relationships.
-* Data ownership.
-* Principle of least privilege.
+- Parameterized queries through the ORM.
+- Explicit relationships.
+- Data ownership.
+- Principle of least privilege.
 
 Sensitive information should never be stored in plaintext.
 
@@ -194,9 +194,9 @@ Authenticated Requests
 
 Sessions are invalidated when:
 
-* The user logs out.
-* The password changes.
-* Administrative action requires re-authentication.
+- The user logs out.
+- The password changes.
+- Administrative action requires re-authentication.
 
 ---
 
@@ -236,9 +236,9 @@ User-generated content requires additional protection.
 
 Examples include:
 
-* Markdown.
-* Course descriptions.
-* Lesson content.
+- Markdown.
+- Course descriptions.
+- Lesson content.
 
 Content should be sanitized before rendering to prevent client-side attacks.
 
@@ -248,9 +248,9 @@ Content should be sanitized before rendering to prevent client-side attacks.
 
 Error responses should:
 
-* Be consistent.
-* Avoid exposing implementation details.
-* Avoid revealing stack traces in production.
+- Be consistent.
+- Avoid exposing implementation details.
+- Avoid revealing stack traces in production.
 
 Detailed information should be written to logs rather than returned to clients.
 
@@ -262,10 +262,10 @@ Logs should assist with debugging and incident investigation.
 
 Logs must not contain:
 
-* Passwords.
-* Session identifiers.
-* Authentication secrets.
-* Sensitive personal information.
+- Passwords.
+- Session identifiers.
+- Authentication secrets.
+- Sensitive personal information.
 
 ---
 
@@ -273,10 +273,10 @@ Logs must not contain:
 
 Third-party dependencies should be:
 
-* Maintained.
-* Reviewed before adoption.
-* Updated regularly.
-* Removed when no longer needed.
+- Maintained.
+- Reviewed before adoption.
+- Updated regularly.
+- Removed when no longer needed.
 
 Every dependency increases the application's attack surface.
 
@@ -286,12 +286,12 @@ Every dependency increases the application's attack surface.
 
 As AxiomForge evolves, the architecture may include:
 
-* Multi-factor authentication.
-* Rate limiting.
-* Audit logging.
-* Security event monitoring.
-* Background security scanning.
-* Container isolation for lab environments.
+- Multi-factor authentication.
+- Rate limiting.
+- Audit logging.
+- Security event monitoring.
+- Background security scanning.
+- Container isolation for lab environments.
 
 These additions should extend the existing architecture rather than replace it.
 
@@ -301,13 +301,13 @@ These additions should extend the existing architecture rather than replace it.
 
 The architecture is guided by these principles:
 
-* Defense in depth.
-* Least privilege.
-* Secure defaults.
-* Explicit authorization.
-* Validated input.
-* Clear ownership of data.
-* Continuous improvement.
+- Defense in depth.
+- Least privilege.
+- Secure defaults.
+- Explicit authorization.
+- Validated input.
+- Clear ownership of data.
+- Continuous improvement.
 
 ---
 
@@ -318,4 +318,3 @@ Security in AxiomForge is not implemented in a single module.
 Instead, security is enforced throughout the application lifecycle, from the moment a request is received until a response is returned.
 
 This layered approach improves resilience, maintainability, and long-term security as the platform grows.
-

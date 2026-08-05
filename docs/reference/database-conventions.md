@@ -6,10 +6,10 @@ This document defines database design conventions used by AxiomForge.
 
 The goal is to maintain:
 
-* Consistent schemas.
-* Clear relationships.
-* Reliable migrations.
-* Easier maintenance.
+- Consistent schemas.
+- Clear relationships.
+- Reliable migrations.
+- Easier maintenance.
 
 AxiomForge uses PostgreSQL with TypeORM.
 
@@ -21,10 +21,10 @@ AxiomForge follows a balanced relational database approach.
 
 The database should:
 
-* Represent business relationships clearly.
-* Protect data integrity.
-* Avoid unnecessary complexity.
-* Support future growth.
+- Represent business relationships clearly.
+- Protect data integrity.
+- Avoid unnecessary complexity.
+- Support future growth.
 
 ---
 
@@ -78,8 +78,8 @@ id UUID PRIMARY KEY
 
 UUIDs are preferred because they:
 
-* Avoid predictable identifiers.
-* Work better with distributed systems in the future.
+- Avoid predictable identifiers.
+- Work better with distributed systems in the future.
 
 ---
 
@@ -123,7 +123,7 @@ courses
 Entity:
 
 ```typescript id="8f4s2q"
-Course
+Course;
 ```
 
 ---
@@ -135,8 +135,7 @@ Example:
 ```typescript id="3k6h9a"
 @Entity()
 export class Course {
-
-  @PrimaryGeneratedColumn("uuid")
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column()
@@ -147,7 +146,6 @@ export class Course {
 
   @UpdateDateColumn()
   updatedAt: Date;
-
 }
 ```
 
@@ -159,9 +157,9 @@ Relationships should represent actual business rules.
 
 Supported relationships:
 
-* One-to-one.
-* One-to-many.
-* Many-to-many.
+- One-to-one.
+- One-to-many.
+- Many-to-many.
 
 ---
 
@@ -239,9 +237,9 @@ deleted_at TIMESTAMP NULL
 
 Use cases:
 
-* Content history.
-* Important user data.
-* Administrative recovery.
+- Content history.
+- Important user data.
+- Administrative recovery.
 
 Do not use soft deletes everywhere.
 
@@ -259,9 +257,9 @@ updated_at
 
 Benefits:
 
-* Auditing.
-* Debugging.
-* History tracking.
+- Auditing.
+- Debugging.
+- History tracking.
 
 ---
 
@@ -276,7 +274,7 @@ enum ReviewStatus {
   DRAFT,
   PENDING,
   APPROVED,
-  REJECTED
+  REJECTED,
 }
 ```
 
@@ -319,9 +317,9 @@ Run Migration
 
 Migrations should:
 
-* Be small.
-* Have descriptive names.
-* Be reversible when possible.
+- Be small.
+- Have descriptive names.
+- Be reversible when possible.
 
 Example:
 
@@ -365,9 +363,9 @@ Indexes should be added based on real usage.
 
 Good candidates:
 
-* Foreign keys.
-* Frequently searched columns.
-* Unique identifiers.
+- Foreign keys.
+- Frequently searched columns.
+- Unique identifiers.
 
 Avoid adding indexes everywhere.
 
@@ -377,16 +375,16 @@ Avoid adding indexes everywhere.
 
 Database design should consider:
 
-* Access control.
-* Data ownership.
-* Sensitive information.
-* Input validation.
+- Access control.
+- Data ownership.
+- Sensitive information.
+- Input validation.
 
 Never store:
 
-* Plain text passwords.
-* Unnecessary personal information.
-* Secrets.
+- Plain text passwords.
+- Unnecessary personal information.
+- Secrets.
 
 ---
 
@@ -432,11 +430,10 @@ permissions
 
 AxiomForge database design follows:
 
-* PostgreSQL relational principles.
-* TypeORM entities.
-* Clear module ownership.
-* Explicit relationships.
-* Migration-based changes.
+- PostgreSQL relational principles.
+- TypeORM entities.
+- Clear module ownership.
+- Explicit relationships.
+- Migration-based changes.
 
 The database should remain understandable and reliable as the platform grows.
-

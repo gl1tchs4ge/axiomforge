@@ -6,10 +6,10 @@ This document defines the Git workflow used for developing and contributing to A
 
 The workflow is designed to provide:
 
-* Clear development history.
-* Safe collaboration.
-* Easier reviews.
-* Controlled changes to the main codebase.
+- Clear development history.
+- Safe collaboration.
+- Easier reviews.
+- Controlled changes to the main codebase.
 
 For the architectural reasoning behind this workflow, see:
 
@@ -39,10 +39,10 @@ The `main` branch represents stable project code.
 
 Rules:
 
-* Code should compile successfully.
-* Tests should pass.
-* Documentation should be updated.
-* Changes should be reviewed before merging.
+- Code should compile successfully.
+- Tests should pass.
+- Documentation should be updated.
+- Changes should be reviewed before merging.
 
 The main branch should always represent a usable version of AxiomForge.
 
@@ -202,10 +202,10 @@ Verified login, logout, and session invalidation.
 
 Before merging:
 
-* Code follows project standards.
-* Tests pass.
-* Documentation is updated if necessary.
-* No unresolved review discussions remain.
+- Code follows project standards.
+- Tests pass.
+- Documentation is updated if necessary.
+- No unresolved review discussions remain.
 
 ---
 
@@ -215,11 +215,11 @@ Reviews exist to improve quality, not block contributors.
 
 Reviewers should focus on:
 
-* Correctness.
-* Security.
-* Maintainability.
-* Consistency.
-* Documentation.
+- Correctness.
+- Security.
+- Maintainability.
+- Consistency.
+- Documentation.
 
 ---
 
@@ -253,9 +253,9 @@ test(users): add permission tests
 
 Good commits:
 
-* Describe one logical change.
-* Have clear messages.
-* Are easy to understand.
+- Describe one logical change.
+- Have clear messages.
+- Are easy to understand.
 
 Avoid:
 
@@ -295,9 +295,9 @@ The preferred merge strategy is:
 
 Benefits:
 
-* Cleaner history.
-* Easier rollback.
-* Keeps main branch understandable.
+- Cleaner history.
+- Easier rollback.
+- Keeps main branch understandable.
 
 Example:
 
@@ -324,10 +324,10 @@ Releases should be created from stable main code.
 
 Each release should include:
 
-* Version number.
-* Release notes.
-* Major changes.
-* Migration notes if needed.
+- Version number.
+- Release notes.
+- Major changes.
+- Migration notes if needed.
 
 Release documentation is stored in:
 
@@ -429,4 +429,3 @@ Main Branch
 ```
 
 The workflow supports both a single developer environment and future open-source collaboration.
-

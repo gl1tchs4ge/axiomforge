@@ -6,10 +6,10 @@ This document provides a high-level overview of the AxiomForge system architectu
 
 It explains:
 
-* Main system components.
-* How data flows through the platform.
-* How frontend, backend, and infrastructure interact.
-* Architectural boundaries.
+- Main system components.
+- How data flows through the platform.
+- How frontend, backend, and infrastructure interact.
+- Architectural boundaries.
 
 For detailed technical decisions, see the Architecture Decision Records.
 
@@ -75,18 +75,18 @@ High-level structure:
 
 Technology:
 
-* Next.js
-* TypeScript
-* Tailwind CSS
-* shadcn/ui
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
 
 Responsibilities:
 
-* User interface.
-* Client-side interactions.
-* Displaying learning content.
-* Managing user sessions from the client perspective.
-* Communicating with backend APIs.
+- User interface.
+- Client-side interactions.
+- Displaying learning content.
+- Managing user sessions from the client perspective.
+- Communicating with backend APIs.
 
 The frontend should not contain business logic that belongs to the backend.
 
@@ -96,17 +96,17 @@ The frontend should not contain business logic that belongs to the backend.
 
 Technology:
 
-* NestJS
-* TypeScript
+- NestJS
+- TypeScript
 
 Responsibilities:
 
-* Business logic.
-* Authentication.
-* Authorization.
-* Data validation.
-* API handling.
-* Learning system logic.
+- Business logic.
+- Authentication.
+- Authorization.
+- Data validation.
+- API handling.
+- Learning system logic.
 
 The backend is organized into domain modules.
 
@@ -138,15 +138,15 @@ Backend
 
 Technology:
 
-* PostgreSQL
-* TypeORM
+- PostgreSQL
+- TypeORM
 
 Responsibilities:
 
-* Persistent storage.
-* Relationships between entities.
-* Data integrity.
-* Database migrations.
+- Persistent storage.
+- Relationships between entities.
+- Data integrity.
+- Database migrations.
 
 The database follows a balanced relational design.
 
@@ -182,13 +182,13 @@ Reusable content is supported through relational relationships instead of duplic
 
 Technology:
 
-* Redis
+- Redis
 
 Responsibilities:
 
-* Store active sessions.
-* Manage authentication state.
-* Allow session invalidation.
+- Store active sessions.
+- Manage authentication state.
+- Allow session invalidation.
 
 Authentication flow:
 
@@ -339,11 +339,11 @@ Database
 
 Important security principles:
 
-* Never trust client input.
-* Validate all external data.
-* Enforce permissions server-side.
-* Keep modules responsible for their own data.
-* Sanitize user-generated content.
+- Never trust client input.
+- Validate all external data.
+- Enforce permissions server-side.
+- Keep modules responsible for their own data.
+- Sanitize user-generated content.
 
 ---
 
@@ -373,9 +373,9 @@ Modules should not directly access another module's internal database logic.
 
 This maintains:
 
-* Security boundaries.
-* Maintainability.
-* Clear ownership.
+- Security boundaries.
+- Maintainability.
+- Clear ownership.
 
 ---
 
@@ -449,9 +449,9 @@ Possible future systems:
 
 Potential additions:
 
-* Isolated environments.
-* Containerized challenges.
-* Automated provisioning.
+- Isolated environments.
+- Containerized challenges.
+- Automated provisioning.
 
 ---
 
@@ -459,9 +459,9 @@ Potential additions:
 
 Potential additions:
 
-* Discussions.
-* Comments.
-* User contributions.
+- Discussions.
+- Comments.
+- User contributions.
 
 ---
 
@@ -469,9 +469,9 @@ Potential additions:
 
 Potential additions:
 
-* Personalized recommendations.
-* AI-assisted learning.
-* Skill analysis.
+- Personalized recommendations.
+- AI-assisted learning.
+- Skill analysis.
 
 ---
 
@@ -501,10 +501,9 @@ The project itself demonstrates professional engineering practices.
 
 AxiomForge is a TypeScript-based modular monolith consisting of:
 
-* A Next.js frontend.
-* A NestJS backend.
-* PostgreSQL data storage.
-* Redis session management.
+- A Next.js frontend.
+- A NestJS backend.
+- PostgreSQL data storage.
+- Redis session management.
 
 The architecture prioritizes clear boundaries, security, maintainability, and controlled growth.
-

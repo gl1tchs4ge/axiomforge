@@ -14,19 +14,19 @@ AxiomForge requires an authorization system that supports different types of use
 
 The platform includes:
 
-* Students learning content
-* Instructors creating educational resources
-* Reviewers validating content quality and security
-* Administrators managing the platform
+- Students learning content
+- Instructors creating educational resources
+- Reviewers validating content quality and security
+- Administrators managing the platform
 
 Since AxiomForge focuses on cybersecurity education, incorrect or unsafe content could negatively impact users. The platform requires a system that balances community contribution with quality control.
 
 The authorization model must support:
 
-* Fine-grained access control
-* Future platform growth
-* Secure content management
-* Separation of responsibilities
+- Fine-grained access control
+- Future platform growth
+- Secure content management
+- Separation of responsibilities
 
 ## Decision
 
@@ -40,11 +40,11 @@ The initial roles are:
 
 Responsibilities:
 
-* Consume educational content
-* Complete lessons
-* Execute labs
-* Submit quizzes
-* Track learning progress
+- Consume educational content
+- Complete lessons
+- Execute labs
+- Submit quizzes
+- Track learning progress
 
 ---
 
@@ -52,10 +52,10 @@ Responsibilities:
 
 Responsibilities:
 
-* Create courses
-* Create lessons
-* Create labs
-* Submit content for review
+- Create courses
+- Create lessons
+- Create labs
+- Submit content for review
 
 Instructors cannot directly publish their own content.
 
@@ -65,10 +65,10 @@ Instructors cannot directly publish their own content.
 
 Responsibilities:
 
-* Review submitted content
-* Validate educational quality
-* Verify technical accuracy
-* Approve or reject submissions
+- Review submitted content
+- Validate educational quality
+- Verify technical accuracy
+- Approve or reject submissions
 
 ---
 
@@ -76,10 +76,10 @@ Responsibilities:
 
 Responsibilities:
 
-* Manage users
-* Manage roles and permissions
-* Manage platform configuration
-* Handle exceptional cases
+- Manage users
+- Manage roles and permissions
+- Manage platform configuration
+- Handle exceptional cases
 
 ## Content Review Workflow
 
@@ -121,15 +121,15 @@ This enforces separation of duties and reduces the risk of inaccurate or unsafe 
 
 Advantages:
 
-* Simple implementation
-* Easy to understand
-* Suitable for small applications
+- Simple implementation
+- Easy to understand
+- Suitable for small applications
 
 Disadvantages:
 
-* Becomes difficult to manage as roles increase
-* Limited flexibility
-* Can create excessive numbers of roles
+- Becomes difficult to manage as roles increase
+- Limited flexibility
+- Can create excessive numbers of roles
 
 Example problem:
 
@@ -145,14 +145,14 @@ would become difficult to maintain.
 
 Advantages:
 
-* Maximum flexibility
-* Very fine-grained control
+- Maximum flexibility
+- Very fine-grained control
 
 Disadvantages:
 
-* More complex management
-* Difficult to maintain manually
-* Requires more administration
+- More complex management
+- Difficult to maintain manually
+- Requires more administration
 
 ---
 
@@ -160,15 +160,15 @@ Disadvantages:
 
 Advantages:
 
-* Simple default role management
-* Fine-grained permissions when needed
-* Scales better as the platform grows
-* Supports future contributor trust systems
+- Simple default role management
+- Fine-grained permissions when needed
+- Scales better as the platform grows
+- Supports future contributor trust systems
 
 Disadvantages:
 
-* More complex than basic RBAC
-* Requires careful permission design
+- More complex than basic RBAC
+- Requires careful permission design
 
 ## Future Evolution
 
@@ -212,33 +212,33 @@ A hidden button does not prevent unauthorized API requests.
 
 The backend must verify:
 
-* User identity
-* Roles
-* Permissions
-* Resource ownership
+- User identity
+- Roles
+- Permissions
+- Resource ownership
 
 ## Consequences
 
 ### Positive Consequences
 
-* Strong separation of responsibilities
-* Better content quality control
-* Reduced security risk
-* Flexible permission management
-* Supports future community growth
+- Strong separation of responsibilities
+- Better content quality control
+- Reduced security risk
+- Flexible permission management
+- Supports future community growth
 
 ### Negative Consequences
 
-* Slower content publishing
-* Requires reviewer availability
-* More complex authorization implementation
+- Slower content publishing
+- Requires reviewer availability
+- More complex authorization implementation
 
 ## Relationship to Previous Decisions
 
 This decision builds upon:
 
-* ADR-001: Modular Monolith Architecture
-* ADR-009: Session-Based Authentication
+- ADR-001: Modular Monolith Architecture
+- ADR-009: Session-Based Authentication
 
 Authentication determines who the user is.
 
@@ -247,4 +247,3 @@ Authorization determines what the authenticated user can do.
 ## Summary
 
 AxiomForge will use RBAC combined with permissions and require independent content review before publication. This approach provides a secure foundation for community contribution while maintaining educational quality and platform trust.
-

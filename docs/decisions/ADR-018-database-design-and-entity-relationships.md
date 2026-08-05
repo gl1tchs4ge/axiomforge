@@ -14,11 +14,11 @@ AxiomForge requires a relational database capable of supporting reusable educati
 
 The database should:
 
-* Support long-term scalability
-* Encourage clear ownership of data
-* Avoid unnecessary complexity
-* Align with the modular monolith architecture
-* Leverage PostgreSQL's relational capabilities
+- Support long-term scalability
+- Encourage clear ownership of data
+- Avoid unnecessary complexity
+- Align with the modular monolith architecture
+- Leverage PostgreSQL's relational capabilities
 
 ## Decision
 
@@ -34,16 +34,16 @@ This approach provides maintainability, strong data integrity, and straightforwa
 
 The initial domain includes:
 
-* Users
-* Roles
-* Permissions
-* Learning Paths
-* Courses
-* Lessons
-* Labs
-* Assessments
-* Progress
-* Review Requests
+- Users
+- Roles
+- Permissions
+- Learning Paths
+- Courses
+- Lessons
+- Labs
+- Assessments
+- Progress
+- Review Requests
 
 Each entity represents a distinct business concept with clearly defined ownership.
 
@@ -75,10 +75,10 @@ Progress will be tracked using specialized tables instead of a single universal 
 
 Examples include:
 
-* Course Progress
-* Lesson Progress
-* Lab Attempts
-* Assessment Attempts
+- Course Progress
+- Lesson Progress
+- Lab Attempts
+- Assessment Attempts
 
 This allows each resource type to store the information relevant to its behavior while keeping the schema clear and maintainable.
 
@@ -112,13 +112,13 @@ Published
 
 Review requests will store:
 
-* Content type
-* Content identifier
-* Submitter
-* Reviewer
-* Status
-* Review comments
-* Timestamps
+- Content type
+- Content identifier
+- Submitter
+- Reviewer
+- Status
+- Review comments
+- Timestamps
 
 This enables consistent quality control across all educational resources.
 
@@ -130,14 +130,14 @@ This enables consistent quality control across all educational resources.
 
 Advantages:
 
-* Maximum normalization
-* Minimal duplication
+- Maximum normalization
+- Minimal duplication
 
 Disadvantages:
 
-* Increased complexity
-* More joins
-* Slower development
+- Increased complexity
+- More joins
+- Slower development
 
 Rejected.
 
@@ -147,10 +147,10 @@ Rejected.
 
 Advantages:
 
-* Good maintainability
-* Clear relationships
-* Efficient PostgreSQL usage
-* Appropriate complexity
+- Good maintainability
+- Clear relationships
+- Efficient PostgreSQL usage
+- Appropriate complexity
 
 Chosen.
 
@@ -160,13 +160,13 @@ Chosen.
 
 Advantages:
 
-* Flexible document structure
+- Flexible document structure
 
 Disadvantages:
 
-* Poor fit for relational data
-* Harder progress tracking
-* Reduced data integrity
+- Poor fit for relational data
+- Harder progress tracking
+- Reduced data integrity
 
 Rejected.
 
@@ -176,17 +176,17 @@ Rejected.
 
 ### Positive Consequences
 
-* Reusable educational content
-* Strong data integrity
-* Clear ownership of entities
-* Flexible learning paths
-* Scalable schema
+- Reusable educational content
+- Strong data integrity
+- Clear ownership of entities
+- Flexible learning paths
+- Scalable schema
 
 ### Negative Consequences
 
-* Additional junction tables
-* More complex queries for many-to-many relationships
-* Requires careful migration planning
+- Additional junction tables
+- More complex queries for many-to-many relationships
+- Requires careful migration planning
 
 ---
 
@@ -194,13 +194,12 @@ Rejected.
 
 This decision supports:
 
-* ADR-001: Modular Monolith Architecture
-* ADR-004: PostgreSQL Database
-* ADR-005: TypeORM ORM
-* ADR-016: Project Structure and Module Organization
-* ADR-017: Domain Model and Core Modules
+- ADR-001: Modular Monolith Architecture
+- ADR-004: PostgreSQL Database
+- ADR-005: TypeORM ORM
+- ADR-016: Project Structure and Module Organization
+- ADR-017: Domain Model and Core Modules
 
 ## Summary
 
 AxiomForge will use a balanced relational schema built around reusable educational resources, specialized progress tracking, and a review workflow integrated into the platform from Version 1.
-

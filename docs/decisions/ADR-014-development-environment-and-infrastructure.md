@@ -16,11 +16,11 @@ The project will initially be developed by a single developer but is intended to
 
 The development environment should:
 
-* Reduce environment differences
-* Simplify onboarding
-* Support future CI/CD
-* Maintain security best practices
-* Avoid unnecessary infrastructure complexity
+- Reduce environment differences
+- Simplify onboarding
+- Support future CI/CD
+- Maintain security best practices
+- Avoid unnecessary infrastructure complexity
 
 ## Decision
 
@@ -44,10 +44,10 @@ PostgreSQL will run inside a Docker container during development.
 
 Reasons:
 
-* Consistent database version
-* Easier setup
-* Easier reset and testing
-* Better onboarding experience
+- Consistent database version
+- Easier setup
+- Easier reset and testing
+- Better onboarding experience
 
 Persistent database storage will use Docker volumes.
 
@@ -99,10 +99,10 @@ Disposable Learning Environments
 
 Future lab infrastructure will require:
 
-* Container isolation
-* Resource limits
-* Network restrictions
-* Secure execution controls
+- Container isolation
+- Resource limits
+- Network restrictions
+- Secure execution controls
 
 ## Options Considered
 
@@ -110,13 +110,13 @@ Future lab infrastructure will require:
 
 Advantages:
 
-* Simple initial setup
+- Simple initial setup
 
 Disadvantages:
 
-* Environment inconsistencies
-* Harder onboarding
-* More configuration problems
+- Environment inconsistencies
+- Harder onboarding
+- More configuration problems
 
 Rejected.
 
@@ -126,10 +126,10 @@ Rejected.
 
 Advantages:
 
-* Reproducible environments
-* Easy local setup
-* Industry standard
-* Appropriate complexity for project size
+- Reproducible environments
+- Easy local setup
+- Industry standard
+- Appropriate complexity for project size
 
 Chosen.
 
@@ -139,18 +139,18 @@ Chosen.
 
 Examples:
 
-* Kubernetes
-* Cloud orchestration
+- Kubernetes
+- Cloud orchestration
 
 Advantages:
 
-* Enterprise scalability
+- Enterprise scalability
 
 Disadvantages:
 
-* Excessive complexity
-* Requires operations overhead
-* Not appropriate for current requirements
+- Excessive complexity
+- Requires operations overhead
+- Not appropriate for current requirements
 
 Rejected.
 
@@ -158,27 +158,26 @@ Rejected.
 
 ### Positive Consequences
 
-* Consistent development environments
-* Easier contributor onboarding
-* Better CI/CD foundation
-* Professional workflow
+- Consistent development environments
+- Easier contributor onboarding
+- Better CI/CD foundation
+- Professional workflow
 
 ### Negative Consequences
 
-* Additional Docker knowledge required
-* Slightly higher resource usage
-* More configuration files
+- Additional Docker knowledge required
+- Slightly higher resource usage
+- More configuration files
 
 ## Relationship to Previous Decisions
 
 This decision supports:
 
-* ADR-001: Modular Monolith Architecture
-* ADR-003: NestJS Backend Framework
-* ADR-004: PostgreSQL Database
-* ADR-013: Testing Strategy
+- ADR-001: Modular Monolith Architecture
+- ADR-003: NestJS Backend Framework
+- ADR-004: PostgreSQL Database
+- ADR-013: Testing Strategy
 
 ## Summary
 
 AxiomForge will use Docker Compose with containerized PostgreSQL and environment-based configuration. The architecture will remain prepared for future isolated cybersecurity lab environments without implementing unnecessary complexity in early versions.
-

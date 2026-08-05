@@ -6,11 +6,11 @@ This document defines the practical coding standards used when developing AxiomF
 
 These standards exist to maintain:
 
-* Readable code.
-* Consistent structure.
-* Easier reviews.
-* Better contributor onboarding.
-* Long-term maintainability.
+- Readable code.
+- Consistent structure.
+- Easier reviews.
+- Better contributor onboarding.
+- Long-term maintainability.
 
 For the reasoning behind these standards, see:
 
@@ -24,10 +24,10 @@ docs/decisions/ADR-019-coding-standards-and-development-conventions.md
 
 Developers should prioritize:
 
-* Clear solutions over clever solutions.
-* Maintainability over short-term speed.
-* Explicit behavior over hidden behavior.
-* Simplicity over unnecessary abstraction.
+- Clear solutions over clever solutions.
+- Maintainability over short-term speed.
+- Explicit behavior over hidden behavior.
+- Simplicity over unnecessary abstraction.
 
 Code should be understandable by another developer who has never seen the implementation before.
 
@@ -72,7 +72,7 @@ Use types when creating compositions or unions.
 Example:
 
 ```typescript
-type UserRole = "student" | "reviewer" | "admin";
+type UserRole = 'student' | 'reviewer' | 'admin';
 ```
 
 ---
@@ -86,11 +86,11 @@ Use PascalCase.
 Examples:
 
 ```typescript
-UserService
+UserService;
 
-CourseController
+CourseController;
 
-ProgressRepository
+ProgressRepository;
 ```
 
 ---
@@ -102,11 +102,11 @@ Use camelCase.
 Examples:
 
 ```typescript
-createUser()
+createUser();
 
-findCourseById()
+findCourseById();
 
-completeLesson()
+completeLesson();
 ```
 
 ---
@@ -155,9 +155,9 @@ courses/
 
 Controllers handle:
 
-* HTTP requests.
-* Input validation.
-* Calling services.
+- HTTP requests.
+- Input validation.
+- Calling services.
 
 Controllers should not contain business logic.
 
@@ -187,9 +187,9 @@ Services contain business logic.
 
 Example responsibilities:
 
-* Processing rules.
-* Coordinating operations.
-* Managing domain behavior.
+- Processing rules.
+- Coordinating operations.
+- Managing domain behavior.
 
 ---
 
@@ -237,9 +237,9 @@ createUser(dto: CreateUserDto)
 
 Benefits:
 
-* Validation.
-* Clear contracts.
-* Security boundaries.
+- Validation.
+- Clear contracts.
+- Security boundaries.
 
 ---
 
@@ -249,9 +249,9 @@ All external input should be validated.
 
 Examples:
 
-* API requests.
-* User content.
-* Configuration values.
+- API requests.
+- User content.
+- Configuration values.
 
 Never assume client data is trustworthy.
 
@@ -265,11 +265,7 @@ Avoid:
 
 ```typescript
 try {
-
-}
-catch {
-
-}
+} catch {}
 ```
 
 Prefer:
@@ -292,13 +288,13 @@ Use the project logging system.
 Prefer:
 
 ```typescript
-this.logger.log("User created");
+this.logger.log('User created');
 ```
 
 Avoid:
 
 ```typescript
-console.log("User created");
+console.log('User created');
 ```
 
 ---
@@ -307,9 +303,9 @@ console.log("User created");
 
 Comments should explain:
 
-* Why something exists.
-* Important assumptions.
-* Non-obvious decisions.
+- Why something exists.
+- Important assumptions.
+- Non-obvious decisions.
 
 Avoid comments that only describe the code.
 
@@ -359,17 +355,15 @@ Example:
 ```typescript
 // External packages
 
-import { Injectable } from "@nestjs/common";
-
+import { Injectable } from '@nestjs/common';
 
 // Internal modules
 
-import { UserService } from "../users/user.service";
-
+import { UserService } from '../users/user.service';
 
 // Local files
 
-import { LoginDto } from "./dto/login.dto";
+import { LoginDto } from './dto/login.dto';
 ```
 
 ---
@@ -380,9 +374,9 @@ import { LoginDto } from "./dto/login.dto";
 
 Components should:
 
-* Have a clear purpose.
-* Avoid unnecessary complexity.
-* Reuse existing components.
+- Have a clear purpose.
+- Avoid unnecessary complexity.
+- Reuse existing components.
 
 ---
 
@@ -394,8 +388,8 @@ Check whether an existing component can be reused.
 
 The project uses:
 
-* Tailwind CSS.
-* shadcn/ui.
+- Tailwind CSS.
+- shadcn/ui.
 
 ---
 
@@ -425,9 +419,9 @@ Pull requests should include:
 
 Explain:
 
-* What changed.
-* Why it changed.
-* Any important considerations.
+- What changed.
+- Why it changed.
+- Any important considerations.
 
 ---
 
@@ -435,9 +429,9 @@ Explain:
 
 Include:
 
-* Tests added.
-* Tests updated.
-* Verification steps.
+- Tests added.
+- Tests updated.
+- Verification steps.
 
 ---
 
@@ -447,9 +441,9 @@ Update documentation when necessary.
 
 Examples:
 
-* New architecture decisions.
-* New environment variables.
-* New API behavior.
+- New architecture decisions.
+- New environment variables.
+- New API behavior.
 
 ---
 
@@ -457,11 +451,11 @@ Examples:
 
 Developers should always consider:
 
-* Input validation.
-* Authentication.
-* Authorization.
-* Data ownership.
-* Sensitive information exposure.
+- Input validation.
+- Authentication.
+- Authorization.
+- Data ownership.
+- Sensitive information exposure.
 
 Security-related changes require extra review.
 
@@ -471,11 +465,10 @@ Security-related changes require extra review.
 
 AxiomForge code should be:
 
-* Readable.
-* Secure.
-* Consistent.
-* Documented.
-* Easy to maintain.
+- Readable.
+- Secure.
+- Consistent.
+- Documented.
+- Easy to maintain.
 
 The goal is not only producing working software, but building software that can continue improving over time.
-

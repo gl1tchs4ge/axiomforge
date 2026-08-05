@@ -16,22 +16,22 @@ AxiomForge should be designed with future growth in mind, but complexity should 
 
 The project should avoid both extremes:
 
-* Building a simple system that cannot grow.
-* Building an unnecessarily complex system for hypothetical problems.
+- Building a simple system that cannot grow.
+- Building an unnecessarily complex system for hypothetical problems.
 
 Examples:
 
 Good:
 
-* Modular monolith architecture.
-* Clear module boundaries.
-* Expandable database design.
+- Modular monolith architecture.
+- Clear module boundaries.
+- Expandable database design.
 
 Avoid:
 
-* Microservices before they are necessary.
-* Complex infrastructure without a real requirement.
-* Abstractions that exist only for theoretical future needs.
+- Microservices before they are necessary.
+- Complex infrastructure without a real requirement.
+- Abstractions that exist only for theoretical future needs.
 
 The goal is:
 
@@ -47,15 +47,15 @@ Before creating a new layer, pattern, or framework, the project should understan
 
 Prefer:
 
-* Clear code.
-* Simple solutions.
-* Explicit behavior.
+- Clear code.
+- Simple solutions.
+- Explicit behavior.
 
 Avoid:
 
-* Overly generic systems.
-* Abstractions without a clear purpose.
-* Complexity that hides the actual logic.
+- Overly generic systems.
+- Abstractions without a clear purpose.
+- Complexity that hides the actual logic.
 
 The best solution is not always the most advanced one.
 
@@ -71,13 +71,13 @@ Security considerations should influence design decisions from the beginning.
 
 Examples:
 
-* Secure authentication.
-* Proper authorization.
-* Input validation.
-* Data ownership boundaries.
-* Secure content review.
-* Dependency management.
-* Automated security checks.
+- Secure authentication.
+- Proper authorization.
+- Input validation.
+- Data ownership boundaries.
+- Secure content review.
+- Dependency management.
+- Automated security checks.
 
 The goal is not perfect security.
 
@@ -91,17 +91,17 @@ Documentation is not separate from development.
 
 AxiomForge should preserve:
 
-* Technical decisions.
-* Architectural reasoning.
-* Development processes.
-* Historical evolution.
+- Technical decisions.
+- Architectural reasoning.
+- Development processes.
+- Historical evolution.
 
 Important changes should be documented through:
 
-* ADRs.
-* Architecture documents.
-* Release notes.
-* API documentation.
+- ADRs.
+- Architecture documents.
+- Release notes.
+- API documentation.
 
 Future contributors should understand not only what exists, but why it exists.
 
@@ -115,11 +115,11 @@ Changes should be reviewed before becoming part of the main project.
 
 This applies to:
 
-* Code changes.
-* Learning content.
-* Labs.
-* Challenges.
-* Security-sensitive features.
+- Code changes.
+- Learning content.
+- Labs.
+- Challenges.
+- Security-sensitive features.
 
 The review process exists to reduce mistakes while maintaining contributor collaboration.
 
@@ -131,11 +131,11 @@ Whenever possible, AxiomForge should use established industry standards.
 
 Examples:
 
-* REST APIs.
-* OpenAPI documentation.
-* Conventional Commits.
-* Standard authentication practices.
-* Established frameworks.
+- REST APIs.
+- OpenAPI documentation.
+- Conventional Commits.
+- Standard authentication practices.
+- Established frameworks.
 
 Custom solutions should only exist when they provide a meaningful advantage.
 
@@ -147,11 +147,11 @@ Code is written for future developers, not only for the current implementation.
 
 Priorities:
 
-* Readable code.
-* Consistent structure.
-* Clear naming.
-* Automated checks.
-* Good documentation.
+- Readable code.
+- Consistent structure.
+- Clear naming.
+- Automated checks.
+- Good documentation.
 
 A working feature that becomes impossible to maintain is not considered a successful implementation.
 
@@ -163,10 +163,10 @@ AxiomForge is a learning platform, and the project itself follows the same philo
 
 Development should emphasize:
 
-* Real-world engineering practices.
-* Practical implementation.
-* Understanding systems deeply.
-* Building reusable solutions.
+- Real-world engineering practices.
+- Practical implementation.
+- Understanding systems deeply.
+- Building reusable solutions.
 
 The project should demonstrate professional software engineering practices through its own development.
 
@@ -180,10 +180,10 @@ Large improvements should be introduced through controlled changes.
 
 Examples:
 
-* Versioned releases.
-* Migration plans.
-* ADRs for architectural changes.
-* Backwards compatibility when practical.
+- Versioned releases.
+- Migration plans.
+- ADRs for architectural changes.
+- Backwards compatibility when practical.
 
 The project should improve without losing its history.
 
@@ -195,10 +195,10 @@ AxiomForge welcomes contributions while maintaining quality standards.
 
 Contributors should:
 
-* Understand existing decisions.
-* Follow project conventions.
-* Document important changes.
-* Respect security considerations.
+- Understand existing decisions.
+- Follow project conventions.
+- Document important changes.
+- Respect security considerations.
 
 Trust is built through responsible contribution.
 
@@ -224,4 +224,3 @@ AxiomForge follows a simple philosophy:
 > Build a secure, maintainable, and scalable platform through thoughtful decisions, clear documentation, and continuous improvement.
 
 The project should grow intentionally, not accidentally.
-

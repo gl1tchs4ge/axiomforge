@@ -132,11 +132,11 @@ Development Standards
 
 Each decision was made after considering:
 
-* Project goals.
-* Maintainability.
-* Security.
-* Future growth.
-* Development resources.
+- Project goals.
+- Maintainability.
+- Security.
+- Future growth.
+- Development resources.
 
 ---
 
@@ -155,12 +155,12 @@ When making future technical decisions:
 
 Future ADRs may cover topics such as:
 
-* Lab execution architecture.
-* Background job systems.
-* Search infrastructure.
-* AI integration.
-* Deployment architecture.
-* Monitoring systems.
+- Lab execution architecture.
+- Background job systems.
+- Search infrastructure.
+- AI integration.
+- Deployment architecture.
+- Monitoring systems.
 
 ---
 
@@ -170,9 +170,8 @@ AxiomForge uses Architecture Decision Records to preserve technical history.
 
 This allows future contributors to understand:
 
-* What choices were made.
-* Why they were made.
-* How the architecture evolved.
+- What choices were made.
+- Why they were made.
+- How the architecture evolved.
 
 The goal is not only to build software, but to create a documented engineering process.
-

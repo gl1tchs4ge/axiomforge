@@ -18,9 +18,9 @@ Before starting, install the following tools.
 
 Used for:
 
-* Repository management.
-* Version control.
-* Collaboration.
+- Repository management.
+- Version control.
+- Collaboration.
 
 ---
 
@@ -28,9 +28,9 @@ Used for:
 
 Used for:
 
-* Backend development.
-* Frontend development.
-* Package management.
+- Backend development.
+- Frontend development.
+- Package management.
 
 The project uses the current supported LTS version of Node.js.
 
@@ -42,8 +42,8 @@ The project requires a Node.js package manager.
 
 Supported options:
 
-* npm
-* pnpm
+- npm
+- pnpm
 
 The recommended package manager will be documented in the project root.
 
@@ -53,9 +53,9 @@ The recommended package manager will be documented in the project root.
 
 Used for:
 
-* Local services.
-* Database containers.
-* Development consistency.
+- Local services.
+- Database containers.
+- Development consistency.
 
 ---
 
@@ -287,8 +287,8 @@ npm test
 
 Ensure:
 
-* Existing tests pass.
-* New functionality has appropriate tests.
+- Existing tests pass.
+- New functionality has appropriate tests.
 
 ---
 
@@ -296,11 +296,11 @@ Ensure:
 
 Check whether the change requires updates to:
 
-* README.
-* ADRs.
-* API documentation.
-* Environment documentation.
-* Release notes.
+- README.
+- ADRs.
+- API documentation.
+- Environment documentation.
+- Release notes.
 
 ---
 
@@ -360,9 +360,9 @@ docker compose logs
 
 Check:
 
-* Docker containers are running.
-* Environment variables are correct.
-* PostgreSQL port is available.
+- Docker containers are running.
+- Environment variables are correct.
+- PostgreSQL port is available.
 
 ---
 
@@ -370,8 +370,8 @@ Check:
 
 Check:
 
-* Redis container is running.
-* Host and port configuration.
+- Redis container is running.
+- Host and port configuration.
 
 ---
 
@@ -385,9 +385,9 @@ npm install
 
 If problems continue:
 
-* Remove `node_modules`.
-* Remove lock files only when necessary.
-* Reinstall dependencies.
+- Remove `node_modules`.
+- Remove lock files only when necessary.
+- Reinstall dependencies.
 
 ---
 
@@ -395,12 +395,13 @@ If problems continue:
 
 Contributors should prioritize:
 
-* Understanding existing architecture.
-* Following established conventions.
-* Writing maintainable code.
-* Documenting important changes.
+- Understanding existing architecture.
+- Following established conventions.
+- Writing maintainable code.
+- Documenting important changes.
 
 The goal is not only to make features work, but to maintain a healthy project over time.
+
 # AxiomForge Development Getting Started Guide
 
 ## Purpose
@@ -421,9 +422,9 @@ Before starting, install the following tools.
 
 Used for:
 
-* Repository management.
-* Version control.
-* Collaboration.
+- Repository management.
+- Version control.
+- Collaboration.
 
 ---
 
@@ -431,9 +432,9 @@ Used for:
 
 Used for:
 
-* Backend development.
-* Frontend development.
-* Package management.
+- Backend development.
+- Frontend development.
+- Package management.
 
 The project uses the current supported LTS version of Node.js.
 
@@ -445,8 +446,8 @@ The project requires a Node.js package manager.
 
 Supported options:
 
-* npm
-* pnpm
+- npm
+- pnpm
 
 The recommended package manager will be documented in the project root.
 
@@ -456,9 +457,9 @@ The recommended package manager will be documented in the project root.
 
 Used for:
 
-* Local services.
-* Database containers.
-* Development consistency.
+- Local services.
+- Database containers.
+- Development consistency.
 
 ---
 
@@ -690,8 +691,8 @@ npm test
 
 Ensure:
 
-* Existing tests pass.
-* New functionality has appropriate tests.
+- Existing tests pass.
+- New functionality has appropriate tests.
 
 ---
 
@@ -699,11 +700,11 @@ Ensure:
 
 Check whether the change requires updates to:
 
-* README.
-* ADRs.
-* API documentation.
-* Environment documentation.
-* Release notes.
+- README.
+- ADRs.
+- API documentation.
+- Environment documentation.
+- Release notes.
 
 ---
 
@@ -763,9 +764,9 @@ docker compose logs
 
 Check:
 
-* Docker containers are running.
-* Environment variables are correct.
-* PostgreSQL port is available.
+- Docker containers are running.
+- Environment variables are correct.
+- PostgreSQL port is available.
 
 ---
 
@@ -773,8 +774,8 @@ Check:
 
 Check:
 
-* Redis container is running.
-* Host and port configuration.
+- Redis container is running.
+- Host and port configuration.
 
 ---
 
@@ -788,9 +789,9 @@ npm install
 
 If problems continue:
 
-* Remove `node_modules`.
-* Remove lock files only when necessary.
-* Reinstall dependencies.
+- Remove `node_modules`.
+- Remove lock files only when necessary.
+- Reinstall dependencies.
 
 ---
 
@@ -798,10 +799,9 @@ If problems continue:
 
 Contributors should prioritize:
 
-* Understanding existing architecture.
-* Following established conventions.
-* Writing maintainable code.
-* Documenting important changes.
+- Understanding existing architecture.
+- Following established conventions.
+- Writing maintainable code.
+- Documenting important changes.
 
 The goal is not only to make features work, but to maintain a healthy project over time.
-

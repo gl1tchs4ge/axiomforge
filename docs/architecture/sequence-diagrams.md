@@ -298,14 +298,14 @@ Require Login Again
 
 As AxiomForge grows, this document should include additional flows such as:
 
-* Password reset.
-* Email verification.
-* Learning path enrollment.
-* Lab execution.
-* Search.
-* Notifications.
-* Administrative actions.
-* AI-assisted learning.
+- Password reset.
+- Email verification.
+- Learning path enrollment.
+- Lab execution.
+- Search.
+- Notifications.
+- Administrative actions.
+- AI-assisted learning.
 
 ---
 
@@ -314,4 +314,3 @@ As AxiomForge grows, this document should include additional flows such as:
 Whenever a feature significantly changes how components interact, the corresponding sequence diagram should be updated to reflect the implementation.
 
 This document should remain synchronized with the architecture and source code.
-

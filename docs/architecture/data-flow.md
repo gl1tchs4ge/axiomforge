@@ -8,10 +8,10 @@ Unlike the sequence diagrams, which focus on interactions between components, th
 
 The objectives are to:
 
-* Explain how information flows through the application.
-* Define ownership of data.
-* Clarify how modules interact.
-* Maintain consistency as the platform grows.
+- Explain how information flows through the application.
+- Define ownership of data.
+- Clarify how modules interact.
+- Maintain consistency as the platform grows.
 
 ---
 
@@ -19,11 +19,11 @@ The objectives are to:
 
 AxiomForge follows these principles:
 
-* Every request is validated before processing.
-* Each module owns its own data.
-* Modules communicate through services rather than directly manipulating another module's data.
-* PostgreSQL is the primary source of truth.
-* Redis is used only for temporary data such as sessions and caching.
+- Every request is validated before processing.
+- Each module owns its own data.
+- Modules communicate through services rather than directly manipulating another module's data.
+- PostgreSQL is the primary source of truth.
+- Redis is used only for temporary data such as sessions and caching.
 
 ---
 
@@ -95,10 +95,10 @@ Authenticated User
 
 ### Notes
 
-* User credentials are validated.
-* Passwords are verified using secure hashing.
-* Session information is stored in Redis.
-* Authentication state is maintained through a secure session cookie.
+- User credentials are validated.
+- Passwords are verified using secure hashing.
+- Session information is stored in Redis.
+- Authentication state is maintained through a secure session cookie.
 
 ---
 
@@ -249,12 +249,12 @@ PostgreSQL stores all persistent application data.
 
 Examples include:
 
-* Users
-* Courses
-* Lessons
-* Assessments
-* Progress
-* Reviews
+- Users
+- Courses
+- Lessons
+- Assessments
+- Progress
+- Reviews
 
 Redis should never become the authoritative data source.
 
@@ -266,9 +266,9 @@ Redis is used for temporary, high-speed operations.
 
 Current uses include:
 
-* Session storage.
-* Short-lived cache entries (future).
-* Rate limiting (future).
+- Session storage.
+- Short-lived cache entries (future).
+- Rate limiting (future).
 
 Redis data should always be recoverable from PostgreSQL when appropriate.
 
@@ -322,13 +322,13 @@ Standard API Error Response
 
 As the platform grows, this document should include flows for:
 
-* Password recovery.
-* Email verification.
-* Notifications.
-* Search indexing.
-* Background jobs.
-* AI-assisted learning.
-* Lab execution.
+- Password recovery.
+- Email verification.
+- Notifications.
+- Search indexing.
+- Background jobs.
+- AI-assisted learning.
+- Lab execution.
 
 ---
 
@@ -357,4 +357,3 @@ Response
 ```
 
 Each module owns its data, PostgreSQL remains the source of truth, and Redis is used only for temporary or performance-related data.
-

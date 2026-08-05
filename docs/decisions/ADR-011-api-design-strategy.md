@@ -14,21 +14,21 @@ AxiomForge requires communication between the Next.js frontend and NestJS backen
 
 The API must support:
 
-* User authentication
-* Courses
-* Lessons
-* Labs
-* Progress tracking
-* User management
-* Future platform features
+- User authentication
+- Courses
+- Lessons
+- Labs
+- Progress tracking
+- User management
+- Future platform features
 
 The API design should prioritize:
 
-* Maintainability
-* Security
-* Clear contracts
-* Developer experience
-* Future extensibility
+- Maintainability
+- Security
+- Clear contracts
+- Developer experience
+- Future extensibility
 
 ## Decision
 
@@ -109,16 +109,16 @@ This allows future GraphQL resolvers to reuse existing business logic without re
 
 Advantages:
 
-* Simple
-* Mature ecosystem
-* Easy to secure
-* Excellent NestJS support
-* Easier for a single developer
+- Simple
+- Mature ecosystem
+- Easy to secure
+- Excellent NestJS support
+- Easier for a single developer
 
 Disadvantages:
 
-* More endpoints may be required
-* Complex frontend queries may require specialized endpoints
+- More endpoints may be required
+- Complex frontend queries may require specialized endpoints
 
 ---
 
@@ -126,16 +126,16 @@ Disadvantages:
 
 Advantages:
 
-* Flexible data querying
-* Client controls response structure
-* Useful for complex applications
+- Flexible data querying
+- Client controls response structure
+- Useful for complex applications
 
 Disadvantages:
 
-* Increased complexity
-* More difficult caching strategy
-* Additional security considerations
-* More infrastructure decisions
+- Increased complexity
+- More difficult caching strategy
+- Additional security considerations
+- More infrastructure decisions
 
 ---
 
@@ -143,15 +143,15 @@ Disadvantages:
 
 Advantages:
 
-* Maximum flexibility
-* Supports different frontend requirements
+- Maximum flexibility
+- Supports different frontend requirements
 
 Disadvantages:
 
-* Two API systems to maintain
-* Increased development complexity
-* More testing requirements
-* Unnecessary for current requirements
+- Two API systems to maintain
+- Increased development complexity
+- More testing requirements
+- Unnecessary for current requirements
 
 ---
 
@@ -161,10 +161,10 @@ AxiomForge will use OpenAPI/Swagger for API documentation.
 
 Swagger provides:
 
-* Interactive API documentation
-* Easier frontend/backend communication
-* Automatic documentation generation
-* Easier API testing
+- Interactive API documentation
+- Easier frontend/backend communication
+- Automatic documentation generation
+- Easier API testing
 
 ## Error Handling
 
@@ -184,36 +184,35 @@ Example:
 
 Benefits:
 
-* Easier frontend handling
-* Better debugging
-* Consistent client experience
+- Easier frontend handling
+- Better debugging
+- Consistent client experience
 
 ## Consequences
 
 ### Positive Consequences
 
-* Simple and maintainable API design
-* Strong NestJS compatibility
-* Clear frontend/backend contract
-* Easy documentation
-* Future GraphQL adoption remains possible
+- Simple and maintainable API design
+- Strong NestJS compatibility
+- Clear frontend/backend contract
+- Easy documentation
+- Future GraphQL adoption remains possible
 
 ### Negative Consequences
 
-* Some complex frontend views may require additional endpoints
-* Future GraphQL adoption will require additional infrastructure
+- Some complex frontend views may require additional endpoints
+- Future GraphQL adoption will require additional infrastructure
 
 ## Relationship to Previous Decisions
 
 This decision builds upon:
 
-* ADR-001: Modular Monolith Architecture
-* ADR-003: Backend Framework – NestJS
-* ADR-006: Frontend Framework – Next.js
+- ADR-001: Modular Monolith Architecture
+- ADR-003: Backend Framework – NestJS
+- ADR-006: Frontend Framework – Next.js
 
 The API architecture follows the same principle of keeping the system flexible without unnecessary complexity.
 
 ## Summary
 
 AxiomForge will use a REST-first API architecture with versioned endpoints and OpenAPI documentation. The backend will remain structured so GraphQL can be introduced later if real requirements justify its complexity.
-

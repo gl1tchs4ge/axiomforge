@@ -24,10 +24,10 @@ Database
 
 The API is designed to be:
 
-* Predictable.
-* Secure.
-* Maintainable.
-* Easy to document.
+- Predictable.
+- Secure.
+- Maintainable.
+- Easy to document.
 
 ---
 
@@ -232,8 +232,8 @@ Authorization verifies:
 
 Authorization uses:
 
-* Roles.
-* Permissions.
+- Roles.
+- Permissions.
 
 Example:
 
@@ -260,15 +260,15 @@ All external input must be validated.
 
 Examples:
 
-* Request bodies.
-* Query parameters.
-* URL parameters.
+- Request bodies.
+- Query parameters.
+- URL parameters.
 
 Validation protects against:
 
-* Invalid data.
-* Unexpected behavior.
-* Malicious input.
+- Invalid data.
+- Unexpected behavior.
+- Malicious input.
 
 ---
 
@@ -278,9 +278,9 @@ User-generated content requires additional protection.
 
 Examples:
 
-* Markdown content.
-* Learning materials.
-* Community contributions.
+- Markdown content.
+- Learning materials.
+- Community contributions.
 
 Content must be sanitized before rendering.
 
@@ -296,10 +296,10 @@ OpenAPI / Swagger
 
 Swagger documentation provides:
 
-* Available endpoints.
-* Request formats.
-* Response schemas.
-* Authentication requirements.
+- Available endpoints.
+- Request formats.
+- Response schemas.
+- Authentication requirements.
 
 ---
 
@@ -377,9 +377,9 @@ However, the architecture should remain flexible enough for future GraphQL adopt
 
 Possible future use cases:
 
-* Complex dashboards.
-* Custom learning analytics.
-* Flexible queries.
+- Complex dashboards.
+- Custom learning analytics.
+- Flexible queries.
 
 GraphQL should only be introduced if REST limitations become a real problem.
 
@@ -402,12 +402,11 @@ When creating a new endpoint:
 
 The AxiomForge API follows:
 
-* REST architecture.
-* Versioned endpoints.
-* Session-based authentication.
-* Strong validation.
-* OpenAPI documentation.
-* Clear module ownership.
+- REST architecture.
+- Versioned endpoints.
+- Session-based authentication.
+- Strong validation.
+- OpenAPI documentation.
+- Clear module ownership.
 
 The API is designed to remain simple today while allowing future expansion.
-

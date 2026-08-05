@@ -2,11 +2,11 @@
 
 AxiomForge is an open-source technical learning platform designed to help people develop practical skills in areas such as:
 
-* Cybersecurity.
-* Programming.
-* IT.
-* Systems administration.
-* Software engineering.
+- Cybersecurity.
+- Programming.
+- IT.
+- Systems administration.
+- Software engineering.
 
 The goal is to create a structured learning ecosystem that combines educational content with practical experience.
 
@@ -24,10 +24,10 @@ AxiomForge is currently being designed and built from the ground up.
 
 The project focuses on:
 
-* Professional software engineering practices.
-* Secure development.
-* Maintainable architecture.
-* Open-source collaboration.
+- Professional software engineering practices.
+- Secure development.
+- Maintainable architecture.
+- Open-source collaboration.
 
 ---
 
@@ -35,12 +35,12 @@ The project focuses on:
 
 AxiomForge aims to become a platform where learners can:
 
-* Follow structured learning paths.
-* Complete courses.
-* Practice through hands-on labs.
-* Track their progress.
-* Contribute educational content.
-* Improve their technical skills.
+- Follow structured learning paths.
+- Complete courses.
+- Practice through hands-on labs.
+- Track their progress.
+- Contribute educational content.
+- Improve their technical skills.
 
 ---
 
@@ -54,9 +54,9 @@ Technical skills require application.
 
 The platform focuses on:
 
-* Practical exercises.
-* Labs.
-* Real-world scenarios.
+- Practical exercises.
+- Labs.
+- Real-world scenarios.
 
 ---
 
@@ -66,10 +66,10 @@ Security is considered throughout development.
 
 Important areas:
 
-* Authentication.
-* Authorization.
-* Input validation.
-* Secure software design.
+- Authentication.
+- Authorization.
+- Input validation.
+- Secure software design.
 
 ---
 
@@ -77,10 +77,10 @@ Important areas:
 
 The project prioritizes:
 
-* Maintainable code.
-* Documentation.
-* Testing.
-* Thoughtful architecture.
+- Maintainable code.
+- Documentation.
+- Testing.
+- Thoughtful architecture.
 
 ---
 
@@ -92,10 +92,10 @@ Contributions are welcome, but changes follow a review process to maintain quali
 
 The contribution workflow includes:
 
-* Feature branches.
-* Pull requests.
-* Code review.
-* Automated checks.
+- Feature branches.
+- Pull requests.
+- Code review.
+- Automated checks.
 
 ---
 
@@ -144,34 +144,34 @@ Admin
 
 ## Frontend
 
-* Next.js
-* TypeScript
-* Tailwind CSS
-* shadcn/ui
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
 
 ## Backend
 
-* NestJS
-* TypeScript
+- NestJS
+- TypeScript
 
 ## Database
 
-* PostgreSQL
-* TypeORM
+- PostgreSQL
+- TypeORM
 
 ## Infrastructure
 
-* Docker Compose
+- Docker Compose
 
 ## Authentication
 
-* Session-based authentication.
-* Redis session storage.
+- Session-based authentication.
+- Redis session storage.
 
 ## API
 
-* REST API.
-* OpenAPI / Swagger documentation.
+- REST API.
+- OpenAPI / Swagger documentation.
 
 More details:
 
@@ -233,10 +233,10 @@ docs/reference/security-model.md
 
 Requirements:
 
-* Node.js
-* Docker
-* Docker Compose
-* Git
+- Node.js
+- Docker
+- Docker Compose
+- Git
 
 Setup instructions:
 
@@ -330,11 +330,10 @@ AxiomForge is built with the goal of becoming a long-term open-source project.
 
 The project values contributors who care about:
 
-* Learning.
-* Quality.
-* Security.
-* Collaboration.
-* Building useful software.
+- Learning.
+- Quality.
+- Security.
+- Collaboration.
+- Building useful software.
 
 Welcome to AxiomForge.
-

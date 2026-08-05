@@ -16,10 +16,10 @@ Do not publicly disclose the vulnerability before it has been reviewed and addre
 
 Private disclosure allows the project to:
 
-* Investigate the issue.
-* Protect users.
-* Develop a fix.
-* Release updates responsibly.
+- Investigate the issue.
+- Protect users.
+- Develop a fix.
+- Release updates responsibly.
 
 ---
 
@@ -31,9 +31,9 @@ Examples of security issues include:
 
 Examples:
 
-* Account takeover vulnerabilities.
-* Session management issues.
-* Password security problems.
+- Account takeover vulnerabilities.
+- Session management issues.
+- Password security problems.
 
 ---
 
@@ -41,9 +41,9 @@ Examples:
 
 Examples:
 
-* Accessing resources without permission.
-* Privilege escalation.
-* Role bypasses.
+- Accessing resources without permission.
+- Privilege escalation.
+- Role bypasses.
 
 ---
 
@@ -51,9 +51,9 @@ Examples:
 
 Examples:
 
-* Sensitive information leaks.
-* Unauthorized access to user data.
-* Incorrect API responses exposing private information.
+- Sensitive information leaks.
+- Unauthorized access to user data.
+- Incorrect API responses exposing private information.
 
 ---
 
@@ -61,10 +61,10 @@ Examples:
 
 Examples:
 
-* Injection vulnerabilities.
-* Cross-site scripting.
-* Unsafe file handling.
-* Security configuration issues.
+- Injection vulnerabilities.
+- Cross-site scripting.
+- Unsafe file handling.
+- Security configuration issues.
 
 ---
 
@@ -72,9 +72,9 @@ Examples:
 
 Examples:
 
-* Unsafe deployment configuration.
-* Exposed services.
-* Insecure defaults.
+- Unsafe deployment configuration.
+- Exposed services.
+- Insecure defaults.
 
 ---
 
@@ -82,10 +82,10 @@ Examples:
 
 The following are generally not security issues:
 
-* Normal bugs without security impact.
-* Feature requests.
-* Performance improvements.
-* Documentation errors.
+- Normal bugs without security impact.
+- Feature requests.
+- Performance improvements.
+- Documentation errors.
 
 These should be reported through normal issue channels.
 
@@ -99,8 +99,8 @@ A useful report should include:
 
 Explain:
 
-* What the vulnerability is.
-* Why it is a security concern.
+- What the vulnerability is.
+- Why it is a security concern.
 
 ---
 
@@ -108,9 +108,9 @@ Explain:
 
 Include:
 
-* Required conditions.
-* Steps to reproduce.
-* Example requests or demonstrations.
+- Required conditions.
+- Steps to reproduce.
+- Example requests or demonstrations.
 
 Only include proof necessary to demonstrate the issue.
 
@@ -120,8 +120,8 @@ Only include proof necessary to demonstrate the issue.
 
 Explain:
 
-* What could happen if exploited.
-* Which users or systems are affected.
+- What could happen if exploited.
+- Which users or systems are affected.
 
 ---
 
@@ -148,10 +148,10 @@ After receiving a report:
 
 Security researchers and contributors are expected to:
 
-* Avoid accessing unnecessary data.
-* Avoid disrupting services.
-* Avoid testing against systems they do not own.
-* Keep vulnerability details private until resolution.
+- Avoid accessing unnecessary data.
+- Avoid disrupting services.
+- Avoid testing against systems they do not own.
+- Keep vulnerability details private until resolution.
 
 ---
 
@@ -159,12 +159,12 @@ Security researchers and contributors are expected to:
 
 AxiomForge follows security practices including:
 
-* Input validation.
-* Session security.
-* Authorization checks.
-* Secure dependency management.
-* Code review.
-* Automated security checks.
+- Input validation.
+- Session security.
+- Authorization checks.
+- Secure dependency management.
+- Code review.
+- Automated security checks.
 
 More details:
 
@@ -190,10 +190,10 @@ Older versions may not receive security updates.
 
 Future improvements may include:
 
-* Automated vulnerability scanning.
-* Security testing pipelines.
-* Audit logging.
-* Advanced monitoring.
+- Automated vulnerability scanning.
+- Security testing pipelines.
+- Audit logging.
+- Advanced monitoring.
 
 ---
 
@@ -202,4 +202,3 @@ Future improvements may include:
 Responsible security research helps make AxiomForge safer.
 
 Thank you to everyone who reports issues responsibly and helps improve the project.
-

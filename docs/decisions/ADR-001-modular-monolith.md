@@ -14,16 +14,16 @@ AxiomForge is designed to grow into a complete technology learning platform.
 
 The platform will eventually include:
 
-* Learning paths
-* Courses and lessons
-* Hands-on labs
-* Assessments
-* Progress tracking
-* User accounts
-* Content management
-* Community features
-* AI-assisted learning
-* Advanced security labs
+- Learning paths
+- Courses and lessons
+- Hands-on labs
+- Assessments
+- Progress tracking
+- User accounts
+- Content management
+- Community features
+- AI-assisted learning
+- Advanced security labs
 
 The system needs an architecture that supports long-term growth while remaining practical to develop and maintain.
 
@@ -68,16 +68,16 @@ Application
 
 ### Advantages
 
-* Simple to understand
-* Fast initial development
-* Common pattern
-* Low complexity
+- Simple to understand
+- Fast initial development
+- Common pattern
+- Low complexity
 
 ### Disadvantages
 
-* Organization follows technical layers instead of business domains
-* Large applications can become difficult to maintain
-* Modules can become tightly coupled
+- Organization follows technical layers instead of business domains
+- Large applications can become difficult to maintain
+- Modules can become tightly coupled
 
 ---
 
@@ -97,16 +97,16 @@ Interfaces
 
 ### Advantages
 
-* Strong separation of business logic
-* Highly testable
-* Independent from frameworks and databases
-* Good for complex systems
+- Strong separation of business logic
+- Highly testable
+- Independent from frameworks and databases
+- Good for complex systems
 
 ### Disadvantages
 
-* More abstraction
-* More initial complexity
-* Slower development for a small team
+- More abstraction
+- More initial complexity
+- Slower development for a small team
 
 ---
 
@@ -126,17 +126,17 @@ Application
 
 ### Advantages
 
-* Clear business boundaries
-* Easier long-term maintenance
-* Avoids premature microservices
-* Allows future scaling
-* Easier extraction of individual services if needed
+- Clear business boundaries
+- Easier long-term maintenance
+- Avoids premature microservices
+- Allows future scaling
+- Easier extraction of individual services if needed
 
 ### Disadvantages
 
-* Requires discipline
-* Poor boundaries can recreate a traditional monolith
-* Developers must carefully manage dependencies
+- Requires discipline
+- Poor boundaries can recreate a traditional monolith
+- Developers must carefully manage dependencies
 
 ---
 
@@ -144,16 +144,16 @@ Application
 
 ### Positive Consequences
 
-* AxiomForge can grow without immediately introducing distributed system complexity.
-* Business domains remain separated.
-* Developers can work on specific modules more easily.
-* Future migration to microservices is possible if necessary.
+- AxiomForge can grow without immediately introducing distributed system complexity.
+- Business domains remain separated.
+- Developers can work on specific modules more easily.
+- Future migration to microservices is possible if necessary.
 
 ### Negative Consequences
 
-* The team must maintain strong module boundaries.
-* Developers must avoid direct dependencies between unrelated modules.
-* Some additional planning is required.
+- The team must maintain strong module boundaries.
+- Developers must avoid direct dependencies between unrelated modules.
+- Some additional planning is required.
 
 ## Future Considerations
 
@@ -161,9 +161,9 @@ If a specific module develops significantly different requirements, it may be ex
 
 Examples:
 
-* AI processing
-* Large-scale lab infrastructure
-* Notification systems
+- AI processing
+- Large-scale lab infrastructure
+- Notification systems
 
 However, this should only happen when there is a clear technical need.
 
@@ -171,10 +171,9 @@ However, this should only happen when there is a clear technical need.
 
 AxiomForge will begin as a modular monolith to balance:
 
-* Development speed
-* Maintainability
-* Scalability
-* Architectural discipline
+- Development speed
+- Maintainability
+- Scalability
+- Architectural discipline
 
 The goal is to build a strong foundation without over-engineering the first version.
-

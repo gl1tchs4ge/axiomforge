@@ -6,12 +6,12 @@ AxiomForge is an open-source project built around learning, collaboration, and c
 
 Contributions are welcome in areas such as:
 
-* Code.
-* Documentation.
-* Testing.
-* Security improvements.
-* Bug reports.
-* Feature suggestions.
+- Code.
+- Documentation.
+- Testing.
+- Security improvements.
+- Bug reports.
+- Feature suggestions.
 
 ---
 
@@ -46,11 +46,11 @@ docs/
 
 When reporting a bug, include:
 
-* Clear description.
-* Steps to reproduce.
-* Expected behavior.
-* Actual behavior.
-* Environment information.
+- Clear description.
+- Steps to reproduce.
+- Expected behavior.
+- Actual behavior.
+- Environment information.
 
 Good bug reports help maintain project quality.
 
@@ -60,18 +60,18 @@ Good bug reports help maintain project quality.
 
 Feature requests should explain:
 
-* The problem being solved.
-* Why the feature is useful.
-* Possible implementation considerations.
+- The problem being solved.
+- Why the feature is useful.
+- Possible implementation considerations.
 
 Not every feature suggestion will immediately become part of the project.
 
 Features are evaluated based on:
 
-* Project goals.
-* Complexity.
-* Maintenance cost.
-* User impact.
+- Project goals.
+- Complexity.
+- Maintenance cost.
+- User impact.
 
 ---
 
@@ -79,10 +79,10 @@ Features are evaluated based on:
 
 Code contributions should:
 
-* Follow project standards.
-* Include appropriate tests.
-* Update documentation when needed.
-* Pass automated checks.
+- Follow project standards.
+- Include appropriate tests.
+- Update documentation when needed.
+- Pass automated checks.
 
 ---
 
@@ -154,9 +154,9 @@ A Pull Request should include:
 
 Explain:
 
-* What changed.
-* Why it changed.
-* How it works.
+- What changed.
+- Why it changed.
+- How it works.
 
 ---
 
@@ -164,9 +164,9 @@ Explain:
 
 Include:
 
-* Tests performed.
-* Commands used.
-* Any limitations.
+- Tests performed.
+- Commands used.
+- Any limitations.
 
 Example:
 
@@ -184,10 +184,10 @@ npm run build
 
 Update documentation when changes affect:
 
-* Architecture.
-* API behavior.
-* Configuration.
-* Development workflow.
+- Architecture.
+- API behavior.
+- Configuration.
+- Development workflow.
 
 ---
 
@@ -197,17 +197,17 @@ Reviews exist to improve the project.
 
 Reviewers evaluate:
 
-* Correctness.
-* Security.
-* Maintainability.
-* Code quality.
-* Documentation.
+- Correctness.
+- Security.
+- Maintainability.
+- Code quality.
+- Documentation.
 
 Review feedback should be:
 
-* Respectful.
-* Specific.
-* Focused on improving the contribution.
+- Respectful.
+- Specific.
+- Focused on improving the contribution.
 
 ---
 
@@ -241,11 +241,11 @@ Before submitting a Pull Request:
 
 Ensure:
 
-* Code follows coding standards.
-* Types are properly defined.
-* Tests pass.
-* No unnecessary dependencies are added.
-* Documentation is updated.
+- Code follows coding standards.
+- Types are properly defined.
+- Tests pass.
+- No unnecessary dependencies are added.
+- Documentation is updated.
 
 See:
 
@@ -259,13 +259,13 @@ docs/development/coding-standards.md
 
 Additional care is required for changes involving:
 
-* Authentication.
-* Authorization.
-* Sessions.
-* User data.
-* File handling.
-* External integrations.
-* Infrastructure.
+- Authentication.
+- Authorization.
+- Sessions.
+- User data.
+- File handling.
+- External integrations.
+- Infrastructure.
 
 Security-related changes may require additional review before merging.
 
@@ -277,10 +277,10 @@ Before adding a dependency:
 
 Consider:
 
-* Is it necessary?
-* Is it actively maintained?
-* Does it introduce security concerns?
-* Could existing tools solve the problem?
+- Is it necessary?
+- Is it actively maintained?
+- Does it introduce security concerns?
+- Could existing tools solve the problem?
 
 Avoid unnecessary dependencies.
 
@@ -290,10 +290,10 @@ Avoid unnecessary dependencies.
 
 Contributors should:
 
-* Communicate clearly.
-* Respect other contributors.
-* Accept constructive feedback.
-* Follow project standards.
+- Communicate clearly.
+- Respect other contributors.
+- Accept constructive feedback.
+- Follow project standards.
 
 AxiomForge is designed to be a welcoming environment focused on building quality software.
 
@@ -310,4 +310,3 @@ By contributing to AxiomForge, contributors agree that their contributions will 
 Every contribution helps improve AxiomForge.
 
 Whether you submit code, documentation, feedback, or ideas, your participation helps build a better learning ecosystem.
-

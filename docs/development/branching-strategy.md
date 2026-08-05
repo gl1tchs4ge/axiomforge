@@ -6,10 +6,10 @@ This document defines the Git branching strategy used by AxiomForge.
 
 The goal is to maintain a simple and scalable workflow that supports:
 
-* Individual development.
-* Code review.
-* Future contributors.
-* Stable releases.
+- Individual development.
+- Code review.
+- Future contributors.
+- Stable releases.
 
 AxiomForge avoids unnecessary Git complexity while maintaining professional development practices.
 
@@ -44,10 +44,10 @@ The `main` branch represents the stable version of the project.
 
 Rules:
 
-* Code should always compile.
-* Tests should pass.
-* Documentation should be updated when necessary.
-* Direct commits should be avoided.
+- Code should always compile.
+- Tests should pass.
+- Documentation should be updated when necessary.
+- Direct commits should be avoided.
 
 Changes enter `main` through Pull Requests.
 
@@ -199,10 +199,10 @@ Delete Branch
 
 Before merging:
 
-* Code must be reviewed.
-* Automated checks must pass.
-* Documentation should be updated if needed.
-* The branch should be up to date with `main`.
+- Code must be reviewed.
+- Automated checks must pass.
+- Documentation should be updated if needed.
+- The branch should be up to date with `main`.
 
 ---
 
@@ -224,9 +224,9 @@ AxiomForge intentionally avoids maintaining many permanent branches.
 
 The project does not use:
 
-* Git Flow.
-* Development branches.
-* Release branches for every version.
+- Git Flow.
+- Development branches.
+- Release branches for every version.
 
 The workflow remains simple:
 
@@ -246,9 +246,9 @@ If the project grows significantly, additional branch strategies may be introduc
 
 Possible additions:
 
-* Release branches.
-* Hotfix branches.
-* Environment-specific branches.
+- Release branches.
+- Hotfix branches.
+- Environment-specific branches.
 
 These should only be added when the project requires them.
 
@@ -258,10 +258,9 @@ These should only be added when the project requires them.
 
 AxiomForge uses a simple feature branch workflow:
 
-* `main` remains stable.
-* Changes happen through branches.
-* Pull Requests provide review.
-* Complexity is added only when needed.
+- `main` remains stable.
+- Changes happen through branches.
+- Pull Requests provide review.
+- Complexity is added only when needed.
 
 This approach balances professional workflow with maintainability for a small development team.
-

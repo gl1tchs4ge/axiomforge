@@ -6,10 +6,10 @@ This document describes the planned evolution of AxiomForge.
 
 The roadmap is designed to balance:
 
-* Building useful features.
-* Maintaining quality.
-* Learning professional engineering practices.
-* Avoiding unnecessary complexity.
+- Building useful features.
+- Maintaining quality.
+- Learning professional engineering practices.
+- Avoiding unnecessary complexity.
 
 Features are prioritized based on their importance to the core mission of AxiomForge.
 
@@ -21,10 +21,10 @@ AxiomForge will follow an incremental development approach.
 
 Each version should:
 
-* Provide real improvements.
-* Maintain stability.
-* Be documented.
-* Build on previous architectural decisions.
+- Provide real improvements.
+- Maintain stability.
+- Be documented.
+- Build on previous architectural decisions.
 
 The project prioritizes completing a strong foundation before expanding into advanced features.
 
@@ -44,17 +44,17 @@ Create the foundation required for development.
 
 Architecture planning:
 
-* Modular monolith decision.
-* Technology selection.
-* Database planning.
-* Security model planning.
-* Development workflow.
+- Modular monolith decision.
+- Technology selection.
+- Database planning.
+- Security model planning.
+- Development workflow.
 
 Documentation:
 
-* ADR system.
-* Architecture documentation.
-* Development standards.
+- ADR system.
+- Architecture documentation.
+- Development standards.
 
 ## Outcome
 
@@ -76,59 +76,59 @@ The platform should allow users to learn through structured content and practica
 
 ### Authentication
 
-* Account creation.
-* Login/logout.
-* Session management.
-* Password management.
+- Account creation.
+- Login/logout.
+- Session management.
+- Password management.
 
 ---
 
 ### User Management
 
-* User profiles.
-* Roles.
-* Permissions.
+- User profiles.
+- Roles.
+- Permissions.
 
 ---
 
 ### Learning System
 
-* Learning paths.
-* Courses.
-* Lessons.
-* Reusable educational content.
+- Learning paths.
+- Courses.
+- Lessons.
+- Reusable educational content.
 
 ---
 
 ### Labs
 
-* Practical challenges.
-* Lab completion tracking.
+- Practical challenges.
+- Lab completion tracking.
 
 ---
 
 ### Assessments
 
-* Knowledge checks.
-* Readiness tests.
-* Content skipping recommendations.
+- Knowledge checks.
+- Readiness tests.
+- Content skipping recommendations.
 
 ---
 
 ### Progress
 
-* Course progress.
-* Lesson completion.
-* Lab progress.
-* Assessment history.
+- Course progress.
+- Lesson completion.
+- Lab progress.
+- Assessment history.
 
 ---
 
 ### Content Review
 
-* Submission workflow.
-* Reviewer approval.
-* Publishing process.
+- Submission workflow.
+- Reviewer approval.
+- Publishing process.
 
 ---
 
@@ -136,10 +136,10 @@ The platform should allow users to learn through structured content and practica
 
 AxiomForge V1 is successful when:
 
-* Users can complete learning paths.
-* Content can be created and reviewed.
-* Progress is tracked correctly.
-* The platform is stable and documented.
+- Users can complete learning paths.
+- Content can be created and reviewed.
+- Progress is tracked correctly.
+- The platform is stable and documented.
 
 ---
 
@@ -157,10 +157,10 @@ Possible features:
 
 Examples:
 
-* Discussions.
-* Comments.
-* User feedback.
-* Community interaction.
+- Discussions.
+- Comments.
+- User feedback.
+- Community interaction.
 
 ---
 
@@ -168,9 +168,9 @@ Examples:
 
 Examples:
 
-* Better authoring tools.
-* More advanced review workflows.
-* Content analytics.
+- Better authoring tools.
+- More advanced review workflows.
+- Content analytics.
 
 ---
 
@@ -178,9 +178,9 @@ Examples:
 
 Examples:
 
-* Personalized recommendations.
-* Improved assessment algorithms.
-* Learning statistics.
+- Personalized recommendations.
+- Improved assessment algorithms.
+- Learning statistics.
 
 ---
 
@@ -188,9 +188,9 @@ Examples:
 
 Possible additions:
 
-* Better monitoring.
-* Improved logging.
-* Performance optimization.
+- Better monitoring.
+- Improved logging.
+- Performance optimization.
 
 ---
 
@@ -208,9 +208,9 @@ Possible features:
 
 Examples:
 
-* Dynamic challenge environments.
-* Containerized labs.
-* Automated provisioning.
+- Dynamic challenge environments.
+- Containerized labs.
+- Automated provisioning.
 
 ---
 
@@ -218,9 +218,9 @@ Examples:
 
 Possible capabilities:
 
-* Learning assistance.
-* Explanations.
-* Personalized guidance.
+- Learning assistance.
+- Explanations.
+- Personalized guidance.
 
 ---
 
@@ -228,9 +228,9 @@ Possible capabilities:
 
 Possible capabilities:
 
-* Skill verification.
-* Completion certificates.
-* Learning achievements.
+- Skill verification.
+- Completion certificates.
+- Learning achievements.
 
 ---
 
@@ -238,9 +238,9 @@ Possible capabilities:
 
 Possible capabilities:
 
-* Learning patterns.
-* Skill progression.
-* Platform insights.
+- Learning patterns.
+- Skill progression.
+- Platform insights.
 
 ---
 
@@ -252,8 +252,8 @@ Some ideas are valuable but are not priorities during early development.
 
 Delayed because:
 
-* The modular monolith provides enough scalability initially.
-* Operational complexity is unnecessary.
+- The modular monolith provides enough scalability initially.
+- Operational complexity is unnecessary.
 
 ---
 
@@ -261,8 +261,8 @@ Delayed because:
 
 Delayed because:
 
-* Docker Compose is sufficient for early development.
-* Infrastructure should solve real problems.
+- Docker Compose is sufficient for early development.
+- Infrastructure should solve real problems.
 
 ---
 
@@ -270,8 +270,8 @@ Delayed because:
 
 Delayed because:
 
-* The core learning platform must exist first.
-* AI features should improve an existing system.
+- The core learning platform must exist first.
+- AI features should improve an existing system.
 
 ---
 
@@ -279,7 +279,7 @@ Delayed because:
 
 Delayed because:
 
-* Learning quality is more important than engagement mechanics.
+- Learning quality is more important than engagement mechanics.
 
 ---
 
@@ -328,4 +328,3 @@ Advanced Ecosystem
 The goal is not to build everything immediately.
 
 The goal is to build a strong platform that can continue improving for years.
-

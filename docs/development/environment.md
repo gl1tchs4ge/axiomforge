@@ -6,10 +6,10 @@ This document explains how environment configuration is managed in AxiomForge.
 
 Environment variables are used to separate:
 
-* Application configuration.
-* Development settings.
-* Production secrets.
-* Deployment-specific values.
+- Application configuration.
+- Development settings.
+- Production secrets.
+- Deployment-specific values.
 
 Secrets should never be committed to the repository.
 
@@ -19,10 +19,10 @@ Secrets should never be committed to the repository.
 
 AxiomForge follows these principles:
 
-* Configuration belongs outside source code.
-* Secrets must never be stored in Git.
-* Development environments should be reproducible.
-* Required variables should always be documented.
+- Configuration belongs outside source code.
+- Secrets must never be stored in Git.
+- Development environments should be reproducible.
+- Required variables should always be documented.
 
 ---
 
@@ -42,9 +42,9 @@ The project uses environment files:
 
 Purpose:
 
-* Documents required variables.
-* Provides a template for contributors.
-* Contains no sensitive information.
+- Documents required variables.
+- Provides a template for contributors.
+- Contains no sensitive information.
 
 This file should always be committed.
 
@@ -66,13 +66,13 @@ SESSION_SECRET=
 
 Purpose:
 
-* Local development configuration.
+- Local development configuration.
 
 This file should:
 
-* Never be committed.
-* Be listed in `.gitignore`.
-* Contain developer-specific values.
+- Never be committed.
+- Be listed in `.gitignore`.
+- Contain developer-specific values.
 
 ---
 
@@ -80,10 +80,10 @@ This file should:
 
 The backend requires configuration for:
 
-* Database access.
-* Authentication.
-* Sessions.
-* Application behavior.
+- Database access.
+- Authentication.
+- Sessions.
+- Application behavior.
 
 Example:
 
@@ -140,9 +140,9 @@ PostgreSQL Container
 
 Database credentials should be different between:
 
-* Development.
-* Testing.
-* Production.
+- Development.
+- Testing.
+- Production.
 
 ---
 
@@ -172,10 +172,10 @@ Redis should not store permanent user data.
 
 Sensitive values include:
 
-* Session secrets.
-* Database passwords.
-* API keys.
-* Encryption keys.
+- Session secrets.
+- Database passwords.
+- API keys.
+- Encryption keys.
 
 These should be managed through:
 
@@ -193,8 +193,8 @@ Secret management system
 
 Possible future solutions:
 
-* Cloud provider secret managers.
-* Dedicated secret management tools.
+- Cloud provider secret managers.
+- Dedicated secret management tools.
 
 ---
 
@@ -240,10 +240,10 @@ Start application services.
 
 Characteristics:
 
-* Local containers.
-* Debug logging.
-* Local database.
-* Test accounts.
+- Local containers.
+- Debug logging.
+- Local database.
+- Test accounts.
 
 ---
 
@@ -251,11 +251,11 @@ Characteristics:
 
 Characteristics:
 
-* Secure secrets.
-* Restricted access.
-* Production database.
-* Monitoring enabled.
-* Strong logging practices.
+- Secure secrets.
+- Restricted access.
+- Production database.
+- Monitoring enabled.
+- Strong logging practices.
 
 ---
 
@@ -263,16 +263,16 @@ Characteristics:
 
 Never:
 
-* Commit `.env` files.
-* Share production secrets.
-* Hardcode credentials.
-* Store passwords in source code.
+- Commit `.env` files.
+- Share production secrets.
+- Hardcode credentials.
+- Store passwords in source code.
 
 Always:
 
-* Use environment variables.
-* Rotate secrets when needed.
-* Document required configuration.
+- Use environment variables.
+- Rotate secrets when needed.
+- Document required configuration.
 
 ---
 
@@ -308,9 +308,8 @@ AxiomForge uses environment-based configuration to keep the project secure, port
 
 The configuration system supports:
 
-* Local development.
-* Automated testing.
-* Future production deployments.
+- Local development.
+- Automated testing.
+- Future production deployments.
 
 Clear configuration management is part of maintaining a secure software system.
-

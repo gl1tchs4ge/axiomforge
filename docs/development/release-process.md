@@ -6,10 +6,10 @@ This document defines the release process used by AxiomForge.
 
 The goal is to create predictable and documented releases that allow contributors and users to understand:
 
-* What changed.
-* Why it changed.
-* Whether changes are compatible.
-* How the project evolved over time.
+- What changed.
+- Why it changed.
+- Whether changes are compatible.
+- How the project evolved over time.
 
 ---
 
@@ -43,9 +43,9 @@ Example:
 
 Used for:
 
-* Breaking API changes.
-* Major architectural changes.
-* Significant redesigns.
+- Breaking API changes.
+- Major architectural changes.
+- Significant redesigns.
 
 ---
 
@@ -59,9 +59,9 @@ Example:
 
 Used for:
 
-* New features.
-* New modules.
-* Backwards-compatible improvements.
+- New features.
+- New modules.
+- Backwards-compatible improvements.
 
 ---
 
@@ -75,10 +75,10 @@ Example:
 
 Used for:
 
-* Bug fixes.
-* Security fixes.
-* Documentation updates.
-* Small improvements.
+- Bug fixes.
+- Security fixes.
+- Documentation updates.
+- Small improvements.
 
 ---
 
@@ -124,10 +124,10 @@ Before creating a release:
 
 Verify:
 
-* Tests pass.
-* Build succeeds.
-* Linting passes.
-* No known critical issues exist.
+- Tests pass.
+- Build succeeds.
+- Linting passes.
+- No known critical issues exist.
 
 ---
 
@@ -135,10 +135,10 @@ Verify:
 
 Update:
 
-* README if necessary.
-* API documentation.
-* Architecture documentation.
-* Release notes.
+- README if necessary.
+- API documentation.
+- Architecture documentation.
+- Release notes.
 
 ---
 
@@ -146,11 +146,11 @@ Update:
 
 Review changes involving:
 
-* Authentication.
-* Authorization.
-* User data.
-* Dependencies.
-* Infrastructure.
+- Authentication.
+- Authorization.
+- User data.
+- Dependencies.
+- Infrastructure.
 
 ---
 
@@ -158,12 +158,12 @@ Review changes involving:
 
 Every release should include:
 
-* Version number.
-* Release date.
-* Added features.
-* Changed behavior.
-* Fixed issues.
-* Breaking changes.
+- Version number.
+- Release date.
+- Added features.
+- Changed behavior.
+- Fixed issues.
+- Breaking changes.
 
 Example:
 
@@ -222,16 +222,16 @@ Breaking changes require additional documentation.
 
 Examples:
 
-* API changes.
-* Database migrations.
-* Removed features.
-* Authentication changes.
+- API changes.
+- Database migrations.
+- Removed features.
+- Authentication changes.
 
 Documentation should explain:
 
-* What changed.
-* Why it changed.
-* How users migrate.
+- What changed.
+- Why it changed.
+- How users migrate.
 
 ---
 
@@ -241,10 +241,10 @@ Security fixes should prioritize user protection.
 
 A security release should include:
 
-* Vulnerability description.
-* Affected versions.
-* Fixed version.
-* Required user actions.
+- Vulnerability description.
+- Affected versions.
+- Fixed version.
+- Required user actions.
 
 Detailed vulnerability information should follow:
 
@@ -260,9 +260,9 @@ If a release causes critical problems:
 
 Possible actions:
 
-* Revert deployment.
-* Publish a patch release.
-* Restore previous stable version.
+- Revert deployment.
+- Publish a patch release.
+- Restore previous stable version.
 
 Rollback procedures should prioritize data integrity.
 
@@ -290,10 +290,10 @@ These versions may contain incomplete features.
 
 As the project grows, release automation may include:
 
-* Automated changelog generation.
-* CI/CD deployment.
-* Automated version management.
-* Release approval workflows.
+- Automated changelog generation.
+- CI/CD deployment.
+- Automated version management.
+- Release approval workflows.
 
 ---
 
@@ -303,10 +303,9 @@ AxiomForge uses documented and predictable releases.
 
 Every version should preserve project history by recording:
 
-* Technical changes.
-* Feature evolution.
-* Architectural decisions.
-* Migration requirements.
+- Technical changes.
+- Feature evolution.
+- Architectural decisions.
+- Migration requirements.
 
 This allows contributors and users to understand how the platform grows over time.
-

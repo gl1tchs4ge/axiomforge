@@ -6,10 +6,10 @@ AxiomForge is built around learning, collaboration, and creating quality softwar
 
 This Code of Conduct defines expectations for everyone participating in the project, including:
 
-* Contributors.
-* Maintainers.
-* Reviewers.
-* Community members.
+- Contributors.
+- Maintainers.
+- Reviewers.
+- Community members.
 
 The goal is to create a respectful environment where people can collaborate and improve.
 
@@ -19,12 +19,12 @@ The goal is to create a respectful environment where people can collaborate and 
 
 Community members should:
 
-* Communicate respectfully.
-* Provide constructive feedback.
-* Focus discussions on ideas and technical decisions.
-* Help others learn.
-* Accept different levels of experience.
-* Respect project guidelines.
+- Communicate respectfully.
+- Provide constructive feedback.
+- Focus discussions on ideas and technical decisions.
+- Help others learn.
+- Accept different levels of experience.
+- Respect project guidelines.
 
 ---
 
@@ -36,17 +36,17 @@ When discussing solutions:
 
 Focus on:
 
-* Evidence.
-* Maintainability.
-* Security.
-* Project goals.
-* User impact.
+- Evidence.
+- Maintainability.
+- Security.
+- Project goals.
+- User impact.
 
 Avoid:
 
-* Personal attacks.
-* Dismissive behavior.
-* Arguments based only on authority.
+- Personal attacks.
+- Dismissive behavior.
+- Arguments based only on authority.
 
 The best solution should be chosen based on technical reasoning.
 
@@ -56,12 +56,12 @@ The best solution should be chosen based on technical reasoning.
 
 The following behavior is not acceptable:
 
-* Harassment.
-* Personal attacks.
-* Discrimination.
-* Threats.
-* Sharing private information without permission.
-* Deliberate disruption of discussions or development.
+- Harassment.
+- Personal attacks.
+- Discrimination.
+- Threats.
+- Sharing private information without permission.
+- Deliberate disruption of discussions or development.
 
 ---
 
@@ -71,15 +71,15 @@ Code reviews should focus on improving the project.
 
 Reviewers should:
 
-* Explain concerns clearly.
-* Suggest improvements.
-* Consider contributor experience.
+- Explain concerns clearly.
+- Suggest improvements.
+- Consider contributor experience.
 
 Contributors should:
 
-* Be open to feedback.
-* Ask questions when something is unclear.
-* Avoid taking technical criticism personally.
+- Be open to feedback.
+- Ask questions when something is unclear.
+- Avoid taking technical criticism personally.
 
 ---
 
@@ -93,9 +93,9 @@ SECURITY.md
 
 Security discussions should prioritize:
 
-* Responsible disclosure.
-* User safety.
-* Fixing vulnerabilities.
+- Responsible disclosure.
+- User safety.
+- Fixing vulnerabilities.
 
 ---
 
@@ -103,10 +103,10 @@ Security discussions should prioritize:
 
 Maintainers should:
 
-* Apply these standards consistently.
-* Encourage healthy collaboration.
-* Provide clear feedback.
-* Protect the quality of the project.
+- Apply these standards consistently.
+- Encourage healthy collaboration.
+- Provide clear feedback.
+- Protect the quality of the project.
 
 ---
 
@@ -114,10 +114,10 @@ Maintainers should:
 
 Violations may result in actions such as:
 
-* Warning.
-* Removal from discussions.
-* Restriction from contributing.
-* Other actions considered appropriate.
+- Warning.
+- Removal from discussions.
+- Restriction from contributing.
+- Other actions considered appropriate.
 
 ---
 
@@ -125,10 +125,10 @@ Violations may result in actions such as:
 
 This Code of Conduct applies to:
 
-* Repository discussions.
-* Pull requests.
-* Issues.
-* Community spaces related to AxiomForge.
+- Repository discussions.
+- Pull requests.
+- Issues.
+- Community spaces related to AxiomForge.
 
 ---
 
@@ -136,10 +136,9 @@ This Code of Conduct applies to:
 
 AxiomForge aims to be a place where people can:
 
-* Learn.
-* Build.
-* Collaborate.
-* Improve.
+- Learn.
+- Build.
+- Collaborate.
+- Improve.
 
 Respectful technical collaboration helps create better software and a stronger community.
-

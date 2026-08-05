@@ -6,10 +6,10 @@ This document explains the organization of the AxiomForge repository.
 
 The structure is designed to support:
 
-* Clear ownership of code.
-* Easier navigation.
-* Future contributors.
-* Long-term maintainability.
+- Clear ownership of code.
+- Easier navigation.
+- Future contributors.
+- Long-term maintainability.
 
 ---
 
@@ -71,10 +71,10 @@ Contains the Next.js frontend application.
 
 Responsibilities:
 
-* User interface.
-* Client-side logic.
-* API communication.
-* UI components.
+- User interface.
+- Client-side logic.
+- API communication.
+- UI components.
 
 Example:
 
@@ -102,10 +102,10 @@ Contains the NestJS backend application.
 
 Responsibilities:
 
-* API endpoints.
-* Business logic.
-* Authentication.
-* Database interaction.
+- API endpoints.
+- Business logic.
+- Authentication.
+- Database interaction.
 
 Example:
 
@@ -158,11 +158,11 @@ Contains common TypeScript definitions.
 Example:
 
 ```typescript id="2q4k0b"
-UserRole
+UserRole;
 
-CourseStatus
+CourseStatus;
 
-ApiResponse
+ApiResponse;
 ```
 
 ---
@@ -456,4 +456,3 @@ Infrastructure
 ```
 
 The structure is designed to remain understandable from the first commit through future growth.
-

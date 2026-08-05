@@ -16,11 +16,11 @@ The platform will initially operate as a web application with a small user base 
 
 Authentication must support:
 
-* User accounts
-* Secure password storage
-* Login sessions
-* Account recovery
-* Future expansion
+- User accounts
+- Secure password storage
+- Login sessions
+- Account recovery
+- Future expansion
 
 ## Decision
 
@@ -28,12 +28,12 @@ AxiomForge will use session-based authentication with secure cookie storage.
 
 The authentication system will use:
 
-* Email and password authentication
-* Argon2id password hashing
-* Server-managed sessions
-* Secure HttpOnly cookies
-* SameSite cookie protection
-* PostgreSQL-backed session storage for the initial version
+- Email and password authentication
+- Argon2id password hashing
+- Server-managed sessions
+- Secure HttpOnly cookies
+- SameSite cookie protection
+- PostgreSQL-backed session storage for the initial version
 
 Password changes will invalidate all active sessions to prevent unauthorized continued access.
 
@@ -43,16 +43,16 @@ Password changes will invalidate all active sessions to prevent unauthorized con
 
 Advantages:
 
-* Strong security defaults for web applications
-* Easy session invalidation
-* HttpOnly cookies reduce token exposure risk
-* Simple mental model
-* Well suited for browser-based applications
+- Strong security defaults for web applications
+- Easy session invalidation
+- HttpOnly cookies reduce token exposure risk
+- Simple mental model
+- Well suited for browser-based applications
 
 Disadvantages:
 
-* Requires server-side session storage
-* More difficult to scale across many servers without shared storage
+- Requires server-side session storage
+- More difficult to scale across many servers without shared storage
 
 ---
 
@@ -60,16 +60,16 @@ Disadvantages:
 
 Advantages:
 
-* Stateless authentication
-* Good support for distributed systems
-* Common for APIs and mobile applications
+- Stateless authentication
+- Good support for distributed systems
+- Common for APIs and mobile applications
 
 Disadvantages:
 
-* More complex security considerations
-* Difficult token revocation
-* Easy to implement incorrectly
-* Requires careful refresh token management
+- More complex security considerations
+- Difficult token revocation
+- Easy to implement incorrectly
+- Requires careful refresh token management
 
 ---
 
@@ -81,10 +81,10 @@ Redis was considered due to its performance and common usage in large-scale syst
 
 A future migration to Redis can occur if:
 
-* Session queries impact database performance.
-* Authentication latency increases significantly.
-* Database resources become constrained.
-* Horizontal scaling requires distributed session storage.
+- Session queries impact database performance.
+- Authentication latency increases significantly.
+- Database resources become constrained.
+- Horizontal scaling requires distributed session storage.
 
 ## Password Security
 
@@ -96,9 +96,9 @@ AxiomForge will use Argon2id for password hashing because it is designed to resi
 
 Sessions will use secure cookie configurations:
 
-* HttpOnly
-* Secure
-* SameSite protection
+- HttpOnly
+- Secure
+- SameSite protection
 
 These settings reduce risks from attacks such as session theft and cross-site request forgery.
 
@@ -118,29 +118,28 @@ This prevents stolen sessions from remaining active after an account recovery ev
 
 ### Positive Consequences
 
-* Strong security model for a web application.
-* Simple implementation and maintenance.
-* Easy account recovery process.
-* Clear session management behavior.
+- Strong security model for a web application.
+- Simple implementation and maintenance.
+- Easy account recovery process.
+- Clear session management behavior.
 
 ### Negative Consequences
 
-* Requires session storage management.
-* Future large-scale deployments may require migration to Redis or another distributed session store.
+- Requires session storage management.
+- Future large-scale deployments may require migration to Redis or another distributed session store.
 
 ## Relationship to Previous Decisions
 
 This decision builds upon:
 
-* ADR-001: Modular Monolith Architecture
-* ADR-002: Backend Language – TypeScript
-* ADR-003: Backend Framework – NestJS
-* ADR-004: Primary Database – PostgreSQL
-* ADR-005: Object Relational Mapper – TypeORM
+- ADR-001: Modular Monolith Architecture
+- ADR-002: Backend Language – TypeScript
+- ADR-003: Backend Framework – NestJS
+- ADR-004: Primary Database – PostgreSQL
+- ADR-005: Object Relational Mapper – TypeORM
 
 The authentication system follows the project's philosophy of selecting secure, maintainable solutions without introducing unnecessary complexity.
 
 ## Summary
 
 AxiomForge will use session-based authentication because it provides a secure, maintainable, and appropriate solution for the project's current requirements while allowing future evolution when real scaling requirements appear.
-

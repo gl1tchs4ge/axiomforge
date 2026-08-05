@@ -6,18 +6,18 @@ This document defines the testing approach used in AxiomForge.
 
 The goal of testing is to maintain:
 
-* Software reliability.
-* Security confidence.
-* Developer confidence.
-* Long-term maintainability.
+- Software reliability.
+- Security confidence.
+- Developer confidence.
+- Long-term maintainability.
 
 AxiomForge follows a balanced professional testing approach.
 
 This means:
 
-* Important functionality receives strong coverage.
-* Security-sensitive code receives additional attention.
-* Tests provide value rather than existing only for metrics.
+- Important functionality receives strong coverage.
+- Security-sensitive code receives additional attention.
+- Tests provide value rather than existing only for metrics.
 
 ---
 
@@ -29,10 +29,10 @@ Testing should answer:
 
 A test is valuable when it:
 
-* Prevents regressions.
-* Protects important business logic.
-* Validates security boundaries.
-* Documents expected behavior.
+- Prevents regressions.
+- Protects important business logic.
+- Validates security boundaries.
+- Documents expected behavior.
 
 ---
 
@@ -66,16 +66,16 @@ Tests individual pieces of logic in isolation.
 
 Examples:
 
-* Services.
-* Utility functions.
-* Business rules.
+- Services.
+- Utility functions.
+- Business rules.
 
 Good candidates:
 
-* Progress calculations.
-* Permission checks.
-* Assessment scoring.
-* Validation logic.
+- Progress calculations.
+- Permission checks.
+- Assessment scoring.
+- Validation logic.
 
 Example:
 
@@ -101,16 +101,16 @@ Tests how application components work together.
 
 Examples:
 
-* Services with repositories.
-* Authentication flows.
-* Database interactions.
+- Services with repositories.
+- Authentication flows.
+- Database interactions.
 
 Important areas:
 
-* User creation.
-* Course enrollment.
-* Progress tracking.
-* Review workflows.
+- User creation.
+- Course enrollment.
+- Progress tracking.
+- Review workflows.
 
 ---
 
@@ -148,10 +148,10 @@ Progress updates
 
 Security testing is a priority because AxiomForge handles:
 
-* User accounts.
-* Learning progress.
-* User-generated content.
-* Future lab environments.
+- User accounts.
+- Learning progress.
+- User-generated content.
+- Future lab environments.
 
 Important security tests:
 
@@ -159,9 +159,9 @@ Important security tests:
 
 Verify:
 
-* Unauthorized users cannot access protected resources.
-* Sessions work correctly.
-* Session invalidation works.
+- Unauthorized users cannot access protected resources.
+- Sessions work correctly.
+- Session invalidation works.
 
 ---
 
@@ -169,8 +169,8 @@ Verify:
 
 Verify:
 
-* Users cannot access resources they do not own.
-* Roles and permissions are enforced.
+- Users cannot access resources they do not own.
+- Roles and permissions are enforced.
 
 ---
 
@@ -178,8 +178,8 @@ Verify:
 
 Verify:
 
-* Invalid input is rejected.
-* Malicious content is sanitized.
+- Invalid input is rejected.
+- Malicious content is sanitized.
 
 ---
 
@@ -187,8 +187,8 @@ Verify:
 
 Verify:
 
-* Markdown processing cannot execute unsafe content.
-* User-generated content is handled safely.
+- Markdown processing cannot execute unsafe content.
+- User-generated content is handled safely.
 
 ---
 
@@ -198,21 +198,21 @@ Priority should be given to:
 
 ## High Priority
 
-* Authentication.
-* Authorization.
-* Security boundaries.
-* Payment-related features (future).
-* User data handling.
-* Core learning progress.
-* Review workflows.
+- Authentication.
+- Authorization.
+- Security boundaries.
+- Payment-related features (future).
+- User data handling.
+- Core learning progress.
+- Review workflows.
 
 ---
 
 ## Medium Priority
 
-* API behavior.
-* Frontend interactions.
-* Utility functions.
+- API behavior.
+- Frontend interactions.
+- Utility functions.
 
 ---
 
@@ -272,10 +272,10 @@ auth/
 
 Pull requests should automatically verify:
 
-* Tests pass.
-* Type checking passes.
-* Linting passes.
-* Application builds successfully.
+- Tests pass.
+- Type checking passes.
+- Linting passes.
+- Application builds successfully.
 
 ---
 
@@ -285,9 +285,9 @@ When behavior changes:
 
 Update:
 
-* Tests.
-* Documentation.
-* API documentation if needed.
+- Tests.
+- Documentation.
+- API documentation if needed.
 
 Tests should reflect the current expected behavior of the system.
 
@@ -297,9 +297,9 @@ Tests should reflect the current expected behavior of the system.
 
 Test data should:
 
-* Be isolated.
-* Not use production data.
-* Be reproducible.
+- Be isolated.
+- Not use production data.
+- Be reproducible.
 
 Development and testing environments should remain separate.
 
@@ -313,9 +313,9 @@ Possible future additions:
 
 Examples:
 
-* Dependency scanning.
-* Static analysis.
-* Automated vulnerability checks.
+- Dependency scanning.
+- Static analysis.
+- Automated vulnerability checks.
 
 ---
 
@@ -323,9 +323,9 @@ Examples:
 
 Possible use cases:
 
-* Large course catalogs.
-* Many simultaneous users.
-* Heavy lab workloads.
+- Large course catalogs.
+- Many simultaneous users.
+- Heavy lab workloads.
 
 ---
 
@@ -333,8 +333,8 @@ Possible use cases:
 
 Possible additions:
 
-* Full environment testing.
-* Deployment verification.
+- Full environment testing.
+- Deployment verification.
 
 ---
 
@@ -361,4 +361,3 @@ Avoid Meaningless Tests
 The objective is not maximum test quantity.
 
 The objective is confidence, reliability, and maintainable software.
-

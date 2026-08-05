@@ -6,11 +6,11 @@ This document defines the error handling strategy used throughout AxiomForge.
 
 The goals are to:
 
-* Provide consistent API responses.
-* Improve debugging.
-* Prevent information leakage.
-* Make errors predictable for frontend developers.
-* Simplify maintenance.
+- Provide consistent API responses.
+- Improve debugging.
+- Prevent information leakage.
+- Make errors predictable for frontend developers.
+- Simplify maintenance.
 
 Error handling should be consistent across every module.
 
@@ -20,12 +20,12 @@ Error handling should be consistent across every module.
 
 AxiomForge follows these principles:
 
-* Fail early.
-* Validate input before business logic.
-* Return meaningful error messages.
-* Never expose internal implementation details.
-* Log enough information for debugging.
-* Keep response formats consistent.
+- Fail early.
+- Validate input before business logic.
+- Return meaningful error messages.
+- Never expose internal implementation details.
+- Log enough information for debugging.
+- Keep response formats consistent.
 
 ---
 
@@ -63,10 +63,10 @@ Errors generally fall into one of the following categories.
 
 Examples:
 
-* Missing required fields.
-* Invalid email format.
-* Invalid UUID.
-* Malformed request body.
+- Missing required fields.
+- Invalid email format.
+- Invalid UUID.
+- Malformed request body.
 
 Response:
 
@@ -80,9 +80,9 @@ Response:
 
 Examples:
 
-* Invalid credentials.
-* Expired session.
-* Missing session.
+- Invalid credentials.
+- Expired session.
+- Missing session.
 
 Response:
 
@@ -96,9 +96,9 @@ Response:
 
 Examples:
 
-* Missing permission.
-* Insufficient role.
-* Attempting to access another user's data.
+- Missing permission.
+- Insufficient role.
+- Attempting to access another user's data.
 
 Response:
 
@@ -112,9 +112,9 @@ Response:
 
 Examples:
 
-* Course not found.
-* Lesson not found.
-* User not found.
+- Course not found.
+- Lesson not found.
+- User not found.
 
 Response:
 
@@ -128,9 +128,9 @@ Response:
 
 Examples:
 
-* Duplicate email.
-* Username already exists.
-* Duplicate enrollment.
+- Duplicate email.
+- Username already exists.
+- Duplicate enrollment.
 
 Response:
 
@@ -146,9 +146,9 @@ Unexpected failures.
 
 Examples:
 
-* Database connection failure.
-* External service unavailable.
-* Unexpected exceptions.
+- Database connection failure.
+- External service unavailable.
+- Unexpected exceptions.
 
 Response:
 
@@ -178,9 +178,9 @@ Example:
 
 Benefits:
 
-* Predictable frontend behavior.
-* Easier debugging.
-* Consistent API documentation.
+- Predictable frontend behavior.
+- Easier debugging.
+- Consistent API documentation.
 
 ---
 
@@ -192,8 +192,8 @@ Errors should be logged according to their severity.
 
 Examples:
 
-* User login.
-* User logout.
+- User login.
+- User logout.
 
 ---
 
@@ -201,9 +201,9 @@ Examples:
 
 Examples:
 
-* Invalid login attempts.
-* Validation failures.
-* Unauthorized access attempts.
+- Invalid login attempts.
+- Validation failures.
+- Unauthorized access attempts.
 
 ---
 
@@ -211,9 +211,9 @@ Examples:
 
 Examples:
 
-* Database failures.
-* Unexpected exceptions.
-* External service failures.
+- Database failures.
+- Unexpected exceptions.
+- External service failures.
 
 ---
 
@@ -221,12 +221,12 @@ Examples:
 
 Never expose:
 
-* Stack traces.
-* SQL queries.
-* Passwords.
-* Session identifiers.
-* Secrets.
-* Internal file paths.
+- Stack traces.
+- SQL queries.
+- Passwords.
+- Session identifiers.
+- Secrets.
+- Internal file paths.
 
 These details belong only in server logs.
 
@@ -238,11 +238,11 @@ Input validation should happen before entering business logic.
 
 Responsibilities include:
 
-* Required fields.
-* Type validation.
-* Format validation.
-* Length constraints.
-* Business rule validation when appropriate.
+- Required fields.
+- Type validation.
+- Format validation.
+- Length constraints.
+- Business rule validation when appropriate.
 
 Invalid requests should not reach the database.
 
@@ -254,9 +254,9 @@ Business rules should produce meaningful errors.
 
 Examples:
 
-* Course already completed.
-* Enrollment limit reached.
-* Lesson prerequisites not satisfied.
+- Course already completed.
+- Enrollment limit reached.
+- Lesson prerequisites not satisfied.
 
 These errors are different from system failures and should communicate what the client can do to resolve them.
 
@@ -274,10 +274,10 @@ Instead, database exceptions should be translated into application-level errors 
 
 A global exception handler should:
 
-* Catch unhandled exceptions.
-* Log unexpected failures.
-* Return standardized error responses.
-* Prevent internal information leakage.
+- Catch unhandled exceptions.
+- Log unexpected failures.
+- Return standardized error responses.
+- Prevent internal information leakage.
 
 This provides a consistent experience across the entire API.
 
@@ -287,10 +287,10 @@ This provides a consistent experience across the entire API.
 
 As the platform grows, error handling may include:
 
-* Error codes for frontend localization.
-* Correlation IDs for tracing.
-* Distributed request tracing.
-* Centralized monitoring and alerting.
+- Error codes for frontend localization.
+- Correlation IDs for tracing.
+- Distributed request tracing.
+- Centralized monitoring and alerting.
 
 ---
 
@@ -300,9 +300,8 @@ AxiomForge uses a centralized and consistent error handling strategy.
 
 Every error should:
 
-* Be categorized appropriately.
-* Return a standard response.
-* Protect sensitive information.
-* Provide enough context for debugging.
-* Remain understandable to API consumers.
-
+- Be categorized appropriately.
+- Return a standard response.
+- Protect sensitive information.
+- Provide enough context for debugging.
+- Remain understandable to API consumers.

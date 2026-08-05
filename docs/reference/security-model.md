@@ -8,10 +8,10 @@ Security is treated as a foundational requirement rather than an additional feat
 
 The goal is to build a platform that is:
 
-* Secure by design.
-* Maintainable.
-* Resistant to common vulnerabilities.
-* Easy to review.
+- Secure by design.
+- Maintainable.
+- Resistant to common vulnerabilities.
+- Easy to review.
 
 ---
 
@@ -54,12 +54,12 @@ Each layer provides additional protection.
 
 AxiomForge considers threats involving:
 
-* Unauthorized account access.
-* Data exposure.
-* Malicious user input.
-* Privilege escalation.
-* Content abuse.
-* Future lab environment abuse.
+- Unauthorized account access.
+- Data exposure.
+- Malicious user input.
+- Privilege escalation.
+- Content abuse.
+- Future lab environment abuse.
 
 Security decisions should consider both current and future risks.
 
@@ -99,9 +99,9 @@ Authenticated Requests
 
 Passwords must:
 
-* Never be stored in plaintext.
-* Use secure hashing algorithms.
-* Be protected from unnecessary exposure.
+- Never be stored in plaintext.
+- Use secure hashing algorithms.
+- Be protected from unnecessary exposure.
 
 ---
 
@@ -109,15 +109,15 @@ Passwords must:
 
 Sessions should:
 
-* Expire appropriately.
-* Be invalidated when necessary.
-* Not contain sensitive information.
+- Expire appropriately.
+- Be invalidated when necessary.
+- Not contain sensitive information.
 
 Examples of session invalidation:
 
-* Password change.
-* Account recovery.
-* Security incidents.
+- Password change.
+- Account recovery.
+- Security incidents.
 
 ---
 
@@ -135,8 +135,8 @@ Authorization answers:
 
 AxiomForge uses:
 
-* Role-based access control (RBAC).
-* Permission-based checks.
+- Role-based access control (RBAC).
+- Permission-based checks.
 
 Example:
 
@@ -185,10 +185,10 @@ All external data is considered untrusted.
 
 Sources include:
 
-* API requests.
-* User forms.
-* Uploaded content.
-* Future integrations.
+- API requests.
+- User forms.
+- Uploaded content.
+- Future integrations.
 
 Validation should happen before processing.
 
@@ -202,9 +202,9 @@ Because of this, content security is important.
 
 Protected content includes:
 
-* Markdown.
-* Code examples.
-* User submissions.
+- Markdown.
+- Code examples.
+- User submissions.
 
 ---
 
@@ -214,9 +214,9 @@ User-generated Markdown must be sanitized before rendering.
 
 Goals:
 
-* Prevent unsafe HTML execution.
-* Protect users viewing content.
-* Maintain safe educational content.
+- Prevent unsafe HTML execution.
+- Protect users viewing content.
+- Maintain safe educational content.
 
 ---
 
@@ -224,16 +224,16 @@ Goals:
 
 API endpoints should:
 
-* Validate requests.
-* Require authentication where necessary.
-* Check permissions.
-* Return safe error messages.
+- Validate requests.
+- Require authentication where necessary.
+- Check permissions.
+- Return safe error messages.
 
 Avoid exposing:
 
-* Internal errors.
-* Database details.
-* Sensitive information.
+- Internal errors.
+- Database details.
+- Sensitive information.
 
 ---
 
@@ -241,10 +241,10 @@ Avoid exposing:
 
 The database layer follows:
 
-* Least privilege principles.
-* Data ownership boundaries.
-* Validated input.
-* Secure credentials.
+- Least privilege principles.
+- Data ownership boundaries.
+- Validated input.
+- Secure credentials.
 
 The application should not expose direct database access.
 
@@ -256,10 +256,10 @@ Logs should help debugging without leaking sensitive data.
 
 Never log:
 
-* Passwords.
-* Session tokens.
-* Secrets.
-* Private user information.
+- Passwords.
+- Session tokens.
+- Secrets.
+- Private user information.
 
 ---
 
@@ -267,9 +267,9 @@ Never log:
 
 Dependencies should be maintained through:
 
-* Regular updates.
-* Security reviews.
-* Automated checks.
+- Regular updates.
+- Security reviews.
+- Automated checks.
 
 New dependencies should be evaluated before introduction.
 
@@ -279,11 +279,11 @@ New dependencies should be evaluated before introduction.
 
 Developers should consider security when:
 
-* Creating endpoints.
-* Handling user input.
-* Designing permissions.
-* Managing files.
-* Adding external integrations.
+- Creating endpoints.
+- Handling user input.
+- Designing permissions.
+- Managing files.
+- Adding external integrations.
 
 Security should be part of implementation, not added afterward.
 
@@ -295,11 +295,11 @@ Security-sensitive changes should receive additional review.
 
 Examples:
 
-* Authentication changes.
-* Authorization changes.
-* Database changes.
-* User-generated content handling.
-* Infrastructure changes.
+- Authentication changes.
+- Authorization changes.
+- Database changes.
+- User-generated content handling.
+- Infrastructure changes.
 
 ---
 
@@ -311,9 +311,9 @@ Possible future additions:
 
 Examples:
 
-* Dependency scanning.
-* Static analysis.
-* Security-focused CI checks.
+- Dependency scanning.
+- Static analysis.
+- Security-focused CI checks.
 
 ---
 
@@ -321,9 +321,9 @@ Examples:
 
 Examples:
 
-* Security alerts.
-* Suspicious activity detection.
-* Audit logs.
+- Security alerts.
+- Suspicious activity detection.
+- Audit logs.
 
 ---
 
@@ -331,9 +331,9 @@ Examples:
 
 Future labs require additional protections:
 
-* Container isolation.
-* Resource limits.
-* Network restrictions.
+- Container isolation.
+- Resource limits.
+- Network restrictions.
 
 ---
 
@@ -390,4 +390,3 @@ Continuous Improvement
 ```
 
 Security is a continuous process that evolves as the platform grows.
-

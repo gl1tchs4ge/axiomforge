@@ -12,16 +12,16 @@ Accepted
 
 AxiomForge requires a collection of reusable user interface components such as:
 
-* Buttons
-* Forms
-* Dialogs
-* Navigation
-* Tables
-* Tabs
-* Dropdowns
-* Toast notifications
-* Cards
-* Input controls
+- Buttons
+- Forms
+- Dialogs
+- Navigation
+- Tables
+- Tabs
+- Dropdowns
+- Toast notifications
+- Cards
+- Input controls
 
 These components should be accessible, customizable, and integrate naturally with the project's Next.js and Tailwind CSS stack.
 
@@ -39,19 +39,19 @@ Unlike traditional component libraries, shadcn/ui provides source code that beco
 
 Advantages:
 
-* Full ownership of component source code
-* Excellent Tailwind CSS integration
-* Accessible components built on Radix UI primitives
-* Highly customizable
-* Strong TypeScript support
-* Modern development workflow
-* Large and active community
+- Full ownership of component source code
+- Excellent Tailwind CSS integration
+- Accessible components built on Radix UI primitives
+- Highly customizable
+- Strong TypeScript support
+- Modern development workflow
+- Large and active community
 
 Disadvantages:
 
-* Components become part of the project and require maintenance
-* Updates are not automatic
-* Developers are responsible for modifications
+- Components become part of the project and require maintenance
+- Updates are not automatic
+- Developers are responsible for modifications
 
 ---
 
@@ -59,15 +59,15 @@ Disadvantages:
 
 Advantages:
 
-* Large ecosystem
-* Extensive component library
-* Mature documentation
+- Large ecosystem
+- Extensive component library
+- Mature documentation
 
 Disadvantages:
 
-* More opinionated visual design
-* Customization can become complex
-* Larger dependency footprint
+- More opinionated visual design
+- Customization can become complex
+- Larger dependency footprint
 
 ---
 
@@ -75,14 +75,14 @@ Disadvantages:
 
 Advantages:
 
-* Excellent developer experience
-* Accessible by default
-* Good documentation
+- Excellent developer experience
+- Accessible by default
+- Good documentation
 
 Disadvantages:
 
-* Less flexibility than owning component source
-* Additional abstraction layer
+- Less flexibility than owning component source
+- Additional abstraction layer
 
 ---
 
@@ -90,42 +90,41 @@ Disadvantages:
 
 Advantages:
 
-* Complete control
-* Maximum learning opportunity
-* No external UI dependencies
+- Complete control
+- Maximum learning opportunity
+- No external UI dependencies
 
 Disadvantages:
 
-* Significant development time
-* Higher maintenance burden
-* Increased risk of accessibility issues
-* Reinvents well-established UI patterns
+- Significant development time
+- Higher maintenance burden
+- Increased risk of accessibility issues
+- Reinvents well-established UI patterns
 
 ## Consequences
 
 ### Positive Consequences
 
-* Reusable and consistent UI components.
-* Strong accessibility foundation.
-* Full control over component implementation.
-* Easier customization to match AxiomForge's design language.
-* Better alignment with the project's educational philosophy.
+- Reusable and consistent UI components.
+- Strong accessibility foundation.
+- Full control over component implementation.
+- Easier customization to match AxiomForge's design language.
+- Better alignment with the project's educational philosophy.
 
 ### Negative Consequences
 
-* Project is responsible for maintaining customized components.
-* Component updates require manual review and integration.
+- Project is responsible for maintaining customized components.
+- Component updates require manual review and integration.
 
 ## Relationship to Previous Decisions
 
 This decision builds upon:
 
-* ADR-006: Frontend Framework – Next.js
-* ADR-007: Frontend Styling – Tailwind CSS
+- ADR-006: Frontend Framework – Next.js
+- ADR-007: Frontend Styling – Tailwind CSS
 
 shadcn/ui complements the selected frontend stack by providing customizable, accessible components while allowing the project to retain full ownership of its UI implementation.
 
 ## Summary
 
 shadcn/ui was selected because it provides a balance between development productivity, accessibility, customization, and learning. It allows AxiomForge to build on proven UI patterns without sacrificing understanding or long-term maintainability.
-

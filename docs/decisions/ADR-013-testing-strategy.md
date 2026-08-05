@@ -14,11 +14,11 @@ AxiomForge is a cybersecurity learning platform where reliability and security a
 
 The project must balance:
 
-* Software quality
-* Development speed
-* Maintainability
-* Learning goals
-* Team size
+- Software quality
+- Development speed
+- Maintainability
+- Learning goals
+- Team size
 
 As a solo developer initially, the testing strategy must provide confidence without creating unnecessary development overhead.
 
@@ -28,10 +28,10 @@ AxiomForge will use a balanced professional testing strategy.
 
 The project will implement:
 
-* Unit testing
-* Integration testing
-* Critical end-to-end testing
-* Security-focused testing
+- Unit testing
+- Integration testing
+- Critical end-to-end testing
+- Security-focused testing
 
 Testing effort will be prioritized based on risk.
 
@@ -41,16 +41,16 @@ Testing effort will be prioritized based on risk.
 
 Used for:
 
-* Business logic
-* Services
-* Utility functions
-* Data transformations
+- Business logic
+- Services
+- Utility functions
+- Data transformations
 
 Purpose:
 
-* Verify isolated behavior
-* Encourage maintainable code
-* Detect logic errors early
+- Verify isolated behavior
+- Encourage maintainable code
+- Detect logic errors early
 
 ---
 
@@ -58,14 +58,14 @@ Purpose:
 
 Used for:
 
-* API endpoints
-* Database interactions
-* Authentication flows
-* Authorization rules
+- API endpoints
+- Database interactions
+- Authentication flows
+- Authorization rules
 
 Purpose:
 
-* Verify system components work together.
+- Verify system components work together.
 
 ---
 
@@ -75,14 +75,14 @@ Used selectively for critical user workflows.
 
 Examples:
 
-* User registration
-* Login
-* Learning path progression
-* Content review workflow
+- User registration
+- Login
+- Learning path progression
+- Content review workflow
 
 Purpose:
 
-* Verify complete user experiences.
+- Verify complete user experiences.
 
 ---
 
@@ -92,11 +92,11 @@ Security testing is a required part of the testing strategy.
 
 Important areas include:
 
-* Authentication security
-* Authorization enforcement
-* Input validation
-* Markdown sanitization
-* API security controls
+- Authentication security
+- Authorization enforcement
+- Input validation
+- Markdown sanitization
+- API security controls
 
 The platform must verify that security boundaries cannot be bypassed.
 
@@ -106,11 +106,11 @@ Automated checks will run before changes are merged.
 
 The CI pipeline will verify:
 
-* Code formatting
-* Linting
-* Type checking
-* Automated tests
-* Application build
+- Code formatting
+- Linting
+- Type checking
+- Automated tests
+- Application build
 
 Automated checks complement human code review.
 
@@ -120,14 +120,14 @@ Automated checks complement human code review.
 
 Advantages:
 
-* Faster development
-* Lower maintenance
+- Faster development
+- Lower maintenance
 
 Disadvantages:
 
-* Lower confidence
-* Increased regression risk
-* Poor demonstration of engineering maturity
+- Lower confidence
+- Increased regression risk
+- Poor demonstration of engineering maturity
 
 Rejected.
 
@@ -137,10 +137,10 @@ Rejected.
 
 Advantages:
 
-* Good confidence
-* Appropriate for project size
-* Industry-aligned
-* Sustainable for a solo developer
+- Good confidence
+- Appropriate for project size
+- Industry-aligned
+- Sustainable for a solo developer
 
 Chosen approach.
 
@@ -150,13 +150,13 @@ Chosen approach.
 
 Advantages:
 
-* Maximum confidence
+- Maximum confidence
 
 Disadvantages:
 
-* Excessive complexity
-* Slower development
-* Unrealistic for current team size
+- Excessive complexity
+- Slower development
+- Unrealistic for current team size
 
 Rejected for initial versions.
 
@@ -164,29 +164,28 @@ Rejected for initial versions.
 
 ### Positive Consequences
 
-* Higher reliability
-* Safer changes
-* Better maintainability
-* Stronger portfolio demonstration
-* Improved security confidence
+- Higher reliability
+- Safer changes
+- Better maintainability
+- Stronger portfolio demonstration
+- Improved security confidence
 
 ### Negative Consequences
 
-* Additional development time
-* Tests require maintenance
-* Requires discipline during development
+- Additional development time
+- Tests require maintenance
+- Requires discipline during development
 
 ## Relationship to Previous Decisions
 
 This decision supports:
 
-* ADR-001: Modular Monolith Architecture
-* ADR-010: Authorization Model
-* ADR-012: Validation and Data Integrity Strategy
+- ADR-001: Modular Monolith Architecture
+- ADR-010: Authorization Model
+- ADR-012: Validation and Data Integrity Strategy
 
 Testing reinforces the separation of responsibilities and security boundaries established by previous decisions.
 
 ## Summary
 
 AxiomForge will use a balanced professional testing strategy with automated checks, security testing, and risk-based test prioritization. This provides a maintainable approach suitable for a growing cybersecurity education platform.
-

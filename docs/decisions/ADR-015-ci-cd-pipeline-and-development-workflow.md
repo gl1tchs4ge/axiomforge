@@ -14,10 +14,10 @@ AxiomForge is intended to support professional software development practices an
 
 The project requires a workflow that provides:
 
-* Code quality control
-* Safe collaboration
-* Automated verification
-* Maintainable development processes
+- Code quality control
+- Safe collaboration
+- Automated verification
+- Maintainable development processes
 
 The workflow must support both the current solo developer environment and future contributors.
 
@@ -75,10 +75,10 @@ Each feature branch should represent a focused change.
 
 Pull requests will be used for:
 
-* Code review
-* Discussion of changes
-* Automated validation
-* Maintaining project history
+- Code review
+- Discussion of changes
+- Automated validation
+- Maintaining project history
 
 Even as a solo developer, pull requests encourage professional development habits.
 
@@ -90,29 +90,29 @@ Required checks:
 
 ### Code Quality
 
-* Linting
-* Formatting verification
+- Linting
+- Formatting verification
 
 ### Type Safety
 
-* TypeScript type checking
+- TypeScript type checking
 
 ### Testing
 
-* Unit tests
-* Integration tests
+- Unit tests
+- Integration tests
 
 ### Build Verification
 
-* Application build process
+- Application build process
 
 ### Security Checks
 
 Security checks will include:
 
-* Dependency vulnerability scanning
-* Secret scanning
-* Static analysis
+- Dependency vulnerability scanning
+- Secret scanning
+- Static analysis
 
 Security tools may initially report issues without blocking all merges until false-positive handling is established.
 
@@ -126,11 +126,11 @@ Deployment will be manual.
 
 The developer will understand:
 
-* Server configuration
-* Docker deployment
-* Environment management
-* Database migrations
-* Application verification
+- Server configuration
+- Docker deployment
+- Environment management
+- Database migrations
+- Application verification
 
 before automating deployment.
 
@@ -162,14 +162,14 @@ Production update
 
 Advantages:
 
-* Simple
-* Fast
+- Simple
+- Fast
 
 Disadvantages:
 
-* No review process
-* Higher chance of breaking main
-* Poor collaboration workflow
+- No review process
+- Higher chance of breaking main
+- Poor collaboration workflow
 
 Rejected.
 
@@ -179,10 +179,10 @@ Rejected.
 
 Advantages:
 
-* Professional workflow
-* Supports collaboration
-* Maintains stable main branch
-* Appropriate complexity
+- Professional workflow
+- Supports collaboration
+- Maintains stable main branch
+- Appropriate complexity
 
 Chosen.
 
@@ -192,13 +192,13 @@ Chosen.
 
 Advantages:
 
-* Useful for some release-based projects
+- Useful for some release-based projects
 
 Disadvantages:
 
-* More complex
-* More maintenance
-* Unnecessary for current project size
+- More complex
+- More maintenance
+- Unnecessary for current project size
 
 Rejected.
 
@@ -208,14 +208,14 @@ Rejected.
 
 Advantages:
 
-* Faster releases
-* Modern workflow
+- Faster releases
+- Modern workflow
 
 Disadvantages:
 
-* Hides deployment complexity
-* Requires additional infrastructure
-* Reduces learning opportunity
+- Hides deployment complexity
+- Requires additional infrastructure
+- Reduces learning opportunity
 
 Rejected initially.
 
@@ -223,27 +223,26 @@ Rejected initially.
 
 ### Positive Consequences
 
-* Better code quality
-* Safer collaboration
-* Professional Git workflow
-* Easier future open-source contribution
-* Reliable changes
+- Better code quality
+- Safer collaboration
+- Professional Git workflow
+- Easier future open-source contribution
+- Reliable changes
 
 ### Negative Consequences
 
-* Additional process overhead
-* CI maintenance required
-* Manual deployment initially requires discipline
+- Additional process overhead
+- CI maintenance required
+- Manual deployment initially requires discipline
 
 ## Relationship to Previous Decisions
 
 This decision supports:
 
-* ADR-013: Testing Strategy
-* ADR-014: Development Environment and Infrastructure
-* Open-source contribution workflow
+- ADR-013: Testing Strategy
+- ADR-014: Development Environment and Infrastructure
+- Open-source contribution workflow
 
 ## Summary
 
 AxiomForge will use feature branches, pull requests, automated CI checks, and a phased deployment strategy. The project will prioritize understanding and reliability before introducing advanced automation.
-

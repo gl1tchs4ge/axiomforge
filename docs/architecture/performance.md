@@ -6,10 +6,10 @@ This document defines the performance philosophy and optimization strategy for A
 
 The objective is to build a platform that is:
 
-* Responsive.
-* Maintainable.
-* Scalable.
-* Efficient.
+- Responsive.
+- Maintainable.
+- Scalable.
+- Efficient.
 
 Performance improvements should be driven by measurement rather than assumptions.
 
@@ -19,11 +19,11 @@ Performance improvements should be driven by measurement rather than assumptions
 
 AxiomForge follows these principles:
 
-* Correctness before optimization.
-* Simplicity before complexity.
-* Measure before optimizing.
-* Optimize bottlenecks, not everything.
-* Keep the architecture maintainable.
+- Correctness before optimization.
+- Simplicity before complexity.
+- Measure before optimizing.
+- Optimize bottlenecks, not everything.
+- Keep the architecture maintainable.
 
 Premature optimization should be avoided.
 
@@ -35,11 +35,11 @@ The platform should provide a responsive user experience for common operations.
 
 Examples include:
 
-* User authentication.
-* Viewing courses.
-* Loading lessons.
-* Updating progress.
-* Searching content.
+- User authentication.
+- Viewing courses.
+- Loading lessons.
+- Updating progress.
+- Searching content.
 
 Performance expectations may evolve as the project grows.
 
@@ -61,13 +61,13 @@ Redis should only be introduced where it provides measurable value.
 
 Current planned uses:
 
-* Session storage.
+- Session storage.
 
 Future uses may include:
 
-* Caching.
-* Rate limiting.
-* Background job coordination.
+- Caching.
+- Rate limiting.
+- Background job coordination.
 
 Every Redis entry should be disposable or recoverable.
 
@@ -77,16 +77,16 @@ Every Redis entry should be disposable or recoverable.
 
 Database optimization should focus on:
 
-* Proper indexing.
-* Efficient queries.
-* Normalized schema.
-* Appropriate relationships.
+- Proper indexing.
+- Efficient queries.
+- Normalized schema.
+- Appropriate relationships.
 
 Avoid:
 
-* Unnecessary indexes.
-* Duplicate data.
-* Excessive joins without measurement.
+- Unnecessary indexes.
+- Duplicate data.
+- Excessive joins without measurement.
 
 ---
 
@@ -94,10 +94,10 @@ Avoid:
 
 API endpoints should:
 
-* Return only required data.
-* Use pagination where appropriate.
-* Avoid unnecessary database queries.
-* Maintain consistent response times.
+- Return only required data.
+- Use pagination where appropriate.
+- Avoid unnecessary database queries.
+- Maintain consistent response times.
 
 Large collections should never be returned in a single request without justification.
 
@@ -109,16 +109,16 @@ Collections that may grow significantly should support pagination.
 
 Examples include:
 
-* Courses.
-* Lessons.
-* Reviews.
-* Users.
+- Courses.
+- Lessons.
+- Reviews.
+- Users.
 
 Pagination improves:
 
-* Response times.
-* Database efficiency.
-* Frontend performance.
+- Response times.
+- Database efficiency.
+- Frontend performance.
 
 ---
 
@@ -128,9 +128,9 @@ Caching should only be added after identifying repeated expensive operations.
 
 Suitable candidates include:
 
-* Public course metadata.
-* Frequently accessed reference data.
-* Dashboard summaries.
+- Public course metadata.
+- Frequently accessed reference data.
+- Dashboard summaries.
 
 Caching should not replace correct database design.
 
@@ -142,9 +142,9 @@ Large files should not be stored directly in the database unless there is a clea
 
 Examples include:
 
-* Images.
-* Course assets.
-* Future downloadable resources.
+- Images.
+- Course assets.
+- Future downloadable resources.
 
 Application metadata may be stored in PostgreSQL while file contents are managed separately.
 
@@ -156,10 +156,10 @@ Long-running operations should not block user requests.
 
 Future examples include:
 
-* Email delivery.
-* Report generation.
-* Notification processing.
-* Search indexing.
+- Email delivery.
+- Report generation.
+- Notification processing.
+- Search indexing.
 
 These operations may be moved to background workers as the platform grows.
 
@@ -171,12 +171,12 @@ Performance decisions should be based on measurable data.
 
 Useful metrics include:
 
-* Response time.
-* Database query duration.
-* CPU usage.
-* Memory usage.
-* Request throughput.
-* Error rate.
+- Response time.
+- Database query duration.
+- CPU usage.
+- Memory usage.
+- Request throughput.
+- Error rate.
 
 Monitoring should identify bottlenecks before architectural changes are made.
 
@@ -186,11 +186,11 @@ Monitoring should identify bottlenecks before architectural changes are made.
 
 Optimization should be considered when there is evidence such as:
 
-* Consistently high response times.
-* Slow database queries.
-* Sustained high CPU utilization.
-* Increasing memory pressure.
-* Poor user experience caused by measurable delays.
+- Consistently high response times.
+- Slow database queries.
+- Sustained high CPU utilization.
+- Increasing memory pressure.
+- Poor user experience caused by measurable delays.
 
 Architectural changes should be justified by observed behavior rather than anticipation.
 
@@ -202,10 +202,10 @@ The architecture should support growth without unnecessary complexity.
 
 Examples include:
 
-* Modular application design.
-* Stateless application servers where practical.
-* Isolated responsibilities.
-* Clearly defined module boundaries.
+- Modular application design.
+- Stateless application servers where practical.
+- Isolated responsibilities.
+- Clearly defined module boundaries.
 
 Scalability should be achieved through incremental improvements.
 
@@ -215,10 +215,10 @@ Scalability should be achieved through incremental improvements.
 
 Avoid:
 
-* Premature optimization.
-* Duplicate caching layers.
-* Overly complex query optimization without evidence.
-* Introducing infrastructure that is not yet required.
+- Premature optimization.
+- Duplicate caching layers.
+- Overly complex query optimization without evidence.
+- Introducing infrastructure that is not yet required.
 
 Complexity should only be added when it solves an identified problem.
 
@@ -228,12 +228,12 @@ Complexity should only be added when it solves an identified problem.
 
 Potential future enhancements include:
 
-* Distributed caching.
-* Background job queues.
-* Search indexing.
-* Content delivery networks (CDNs).
-* Read replicas.
-* Horizontal scaling.
+- Distributed caching.
+- Background job queues.
+- Search indexing.
+- Content delivery networks (CDNs).
+- Read replicas.
+- Horizontal scaling.
 
 These should be introduced only when justified by the platform's growth.
 
@@ -245,10 +245,9 @@ AxiomForge treats performance as an engineering discipline rather than a collect
 
 The project prioritizes:
 
-* Correctness.
-* Simplicity.
-* Measured improvements.
-* Maintainability.
+- Correctness.
+- Simplicity.
+- Measured improvements.
+- Maintainability.
 
 Performance should improve through observation, analysis, and iterative refinement as the platform evolves.
-

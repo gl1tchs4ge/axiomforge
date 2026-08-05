@@ -8,10 +8,10 @@ AxiomForge follows a modular monolith architecture where each module represents 
 
 Each module:
 
-* Owns its business logic.
-* Controls its own data.
-* Exposes controlled interfaces to other modules.
-* Avoids direct access to another module's internal implementation.
+- Owns its business logic.
+- Controls its own data.
+- Exposes controlled interfaces to other modules.
+- Avoids direct access to another module's internal implementation.
 
 ---
 
@@ -49,12 +49,12 @@ Handles user authentication and session management.
 
 ## Responsibilities
 
-* User login.
-* User logout.
-* Session creation.
-* Session invalidation.
-* Password management.
-* Authentication guards.
+- User login.
+- User logout.
+- Session creation.
+- Session invalidation.
+- Password management.
+- Authentication guards.
 
 ## Owns
 
@@ -68,9 +68,9 @@ Credentials
 
 ## Does Not Own
 
-* User profiles.
-* Roles and permissions.
-* Learning data.
+- User profiles.
+- Roles and permissions.
+- Learning data.
 
 Those belong to other modules.
 
@@ -84,10 +84,10 @@ Manages user identity and access control.
 
 ## Responsibilities
 
-* User profiles.
-* Roles.
-* Permissions.
-* Account information.
+- User profiles.
+- Roles.
+- Permissions.
+- Account information.
 
 ## Owns
 
@@ -125,10 +125,10 @@ This is the core learning ecosystem.
 
 ## Responsibilities
 
-* Learning paths.
-* Courses.
-* Lessons.
-* Content organization.
+- Learning paths.
+- Courses.
+- Lessons.
+- Content organization.
 
 ## Owns
 
@@ -190,10 +190,10 @@ Provides practical learning experiences.
 
 ## Responsibilities
 
-* Lab creation.
-* Lab organization.
-* Lab attempts.
-* Future isolated environments.
+- Lab creation.
+- Lab organization.
+- Lab attempts.
+- Future isolated environments.
 
 ## Owns
 
@@ -225,17 +225,17 @@ Handles knowledge evaluation and readiness checks.
 
 Assessments are used for:
 
-* Lesson completion.
-* Course completion.
-* Path readiness.
-* Skipping content already mastered.
+- Lesson completion.
+- Course completion.
+- Path readiness.
+- Skipping content already mastered.
 
 ## Responsibilities
 
-* Creating assessments.
-* Managing questions.
-* Evaluating attempts.
-* Calculating scores.
+- Creating assessments.
+- Managing questions.
+- Evaluating attempts.
+- Calculating scores.
 
 ## Owns
 
@@ -259,10 +259,10 @@ Tracks user advancement through the platform.
 
 ## Responsibilities
 
-* Course progress.
-* Lesson completion.
-* Lab progress.
-* Assessment history.
+- Course progress.
+- Lesson completion.
+- Lab progress.
+- Assessment history.
 
 ## Owns
 
@@ -296,10 +296,10 @@ This module enables community contributions while maintaining developer-controll
 
 ## Responsibilities
 
-* Submission workflow.
-* Review assignments.
-* Approval process.
-* Feedback.
+- Submission workflow.
+- Review assignments.
+- Approval process.
+- Feedback.
 
 ## Owns
 
@@ -345,10 +345,10 @@ Provides administrative capabilities.
 
 ## Responsibilities
 
-* User management.
-* Platform configuration.
-* Moderation tools.
-* Administrative actions.
+- User management.
+- Platform configuration.
+- Moderation tools.
+- Administrative actions.
 
 ## Owns
 
@@ -386,9 +386,9 @@ The Learning module does not directly modify progress data.
 
 A module can:
 
-* Use another module's public services.
-* Request information through defined interfaces.
-* Emit events in future versions.
+- Use another module's public services.
+- Request information through defined interfaces.
+- Emit events in future versions.
 
 ---
 
@@ -396,9 +396,9 @@ A module can:
 
 A module cannot:
 
-* Modify another module's database tables directly.
-* Access private implementation details.
-* Bypass another module's business rules.
+- Modify another module's database tables directly.
+- Access private implementation details.
+- Bypass another module's business rules.
 
 ---
 
@@ -412,9 +412,9 @@ Possible modules:
 
 Could handle:
 
-* Discussions.
-* Comments.
-* User interactions.
+- Discussions.
+- Comments.
+- User interactions.
 
 ---
 
@@ -422,9 +422,9 @@ Could handle:
 
 Could handle:
 
-* Emails.
-* Alerts.
-* Platform messages.
+- Emails.
+- Alerts.
+- Platform messages.
 
 ---
 
@@ -432,8 +432,8 @@ Could handle:
 
 Could handle:
 
-* Learning suggestions.
-* Personalized paths.
+- Learning suggestions.
+- Personalized paths.
 
 ---
 
@@ -453,4 +453,3 @@ AxiomForge is divided into focused business modules:
 | Admin       | Platform management          |
 
 This structure keeps AxiomForge maintainable, secure, and ready for future growth.
-

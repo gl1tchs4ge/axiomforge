@@ -40,10 +40,10 @@ Contains the high-level design of AxiomForge.
 
 Includes:
 
-* System architecture.
-* Technology choices.
-* Module organization.
-* Long-term roadmap.
+- System architecture.
+- Technology choices.
+- Module organization.
+- Long-term roadmap.
 
 Start here:
 
@@ -67,9 +67,9 @@ Contains Architecture Decision Records (ADRs).
 
 ADRs document:
 
-* Important technical decisions.
-* Alternatives considered.
-* Reasons behind choices.
+- Important technical decisions.
+- Alternatives considered.
+- Reasons behind choices.
 
 Examples:
 
@@ -97,11 +97,11 @@ Contains guides for developers working on AxiomForge.
 
 Includes:
 
-* Setup instructions.
-* Coding standards.
-* Git workflow.
-* Environment configuration.
-* Testing strategy.
+- Setup instructions.
+- Coding standards.
+- Git workflow.
+- Environment configuration.
+- Testing strategy.
 
 Start here:
 
@@ -125,11 +125,11 @@ Defines how applications communicate with the AxiomForge backend.
 
 Includes:
 
-* REST conventions.
-* Endpoint structure.
-* Authentication behavior.
-* API versioning.
-* OpenAPI documentation.
+- REST conventions.
+- Endpoint structure.
+- Authentication behavior.
+- API versioning.
+- OpenAPI documentation.
 
 ---
 
@@ -147,10 +147,10 @@ Documents project versions.
 
 Includes:
 
-* Features added.
-* Architecture changes.
-* Migration notes.
-* Breaking changes.
+- Features added.
+- Architecture changes.
+- Migration notes.
+- Breaking changes.
 
 ---
 
@@ -168,10 +168,10 @@ Contains general project knowledge.
 
 Includes:
 
-* Glossary.
-* Repository structure.
-* Database conventions.
-* Security model.
+- Glossary.
+- Repository structure.
+- Database conventions.
+- Security model.
 
 ---
 
@@ -233,9 +233,9 @@ Important decisions should explain reasoning, not only implementation.
 
 Documentation should be updated when:
 
-* Architecture changes.
-* New workflows are introduced.
-* Features change behavior.
+- Architecture changes.
+- New workflows are introduced.
+- Features change behavior.
 
 ---
 
@@ -243,9 +243,9 @@ Documentation should be updated when:
 
 Documentation should be understandable by:
 
-* New contributors.
-* Future maintainers.
-* Developers learning from the project.
+- New contributors.
+- Future maintainers.
+- Developers learning from the project.
 
 ---
 
@@ -281,10 +281,9 @@ Update development documentation
 
 The AxiomForge documentation system provides:
 
-* Architectural transparency.
-* Contributor guidance.
-* Technical references.
-* Project history.
+- Architectural transparency.
+- Contributor guidance.
+- Technical references.
+- Project history.
 
 The documentation evolves together with the software.
-
