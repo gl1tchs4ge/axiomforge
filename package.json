@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "A modern cybersecurity learning platform",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "packageManager": "pnpm@11.20.0",
   "type": "module",
   "scripts": {
